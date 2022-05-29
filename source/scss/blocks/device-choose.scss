@@ -1,0 +1,52 @@
+.device-choose {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px;
+
+  label {
+    width: calc((100% - 15px) / 2);
+  }
+}
+
+.device-choose-list {
+  margin: 0 0 30px;
+
+  li {
+    @include font(16px, 24px, 400, $text-main);
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+
+    span {
+      display: inline-block;
+      padding-left: 28px;
+    }
+
+    &::before {
+      content: "1";
+      @include font(36px, 24px, 500, #2858ff);
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:first-child {
+      &::before {
+        content: "1";
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: "2";
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        content: "3";
+      }
+    }
+  }
+}

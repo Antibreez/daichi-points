@@ -1,0 +1,33 @@
+.button-message {
+  padding: 24px;
+  border-radius: 5px;
+  background-color: $bg;
+  display: flex;
+  align-items: center;
+}
+
+.button-message__text {
+  @include font(16px, 24px, 400, $text-minor);
+  padding-right: 24px;
+}
+
+.button-message__btn.button {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+}
+
+@include mobile {
+  .button-message {
+    flex-direction: column;
+  }
+
+  .button-message__text {
+    padding-right: 0;
+    margin: 0 0 24px;
+  }
+
+  .button-message__btn.button {
+    width: 100%;
+  }
+}

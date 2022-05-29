@@ -1,0 +1,49 @@
+.reason-card {
+  position: relative;
+  max-width: 306px;
+  height: 100%;
+  background-color: #f4f4f8;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .article-grid-item__more {
+    line-height: 22px;
+    display: block;
+    margin-top: auto;
+  }
+}
+
+.reason-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.reason-card__title {
+  @include font(18px, 23px, 500, $text-main);
+  margin: 0 0 10px;
+}
+
+.reason-card__desc {
+  @include font(14px, 21px, 400, $text-minor);
+  margin: 0 0 10px;
+}
+
+.reason-card__chip {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+@include mobile {
+  .reason-card {
+    max-width: 240px;
+  }
+
+  .reason-card__content {
+    padding: 16px;
+  }
+}

@@ -1,0 +1,189 @@
+.my-points__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-points__main-points {
+  width: calc((100% - 24px) / 2);
+  padding: 30px 28px 30px 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+
+  img {
+    flex-shrink: 0;
+    width: 86px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 24px;
+  }
+}
+
+.my-points__main-register {
+  width: calc((100% - 24px) / 2);
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  background: #f4f4f8;
+  border-radius: 5px;
+
+  b {
+    @include font(18px, 21px, 500, $text-main);
+  }
+
+  a {
+    flex-shrink: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: 16px;
+  }
+}
+
+.my-points__main-points-list {
+  display: flex;
+
+  span {
+    display: block;
+  }
+
+  span:first-child {
+    @include font(16px, 19px, 500);
+    margin: 0 0 2px;
+  }
+
+  span:last-child {
+    @include font(14px, 21px, 400);
+    margin: 0;
+  }
+
+  div {
+    span {
+      color: $text-main;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #d1d8e1;
+      margin-right: 16px;
+      padding-right: 16px;
+    }
+
+    &:not(:first-child) {
+      span {
+        color: $text-minor;
+      }
+    }
+  }
+}
+
+.my-points__filter {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1359px) {
+  .my-points__main {
+    flex-direction: column;
+  }
+
+  .my-points__main-points {
+    width: 100%;
+    margin: 0 0 24px;
+  }
+
+  .my-points__main-register {
+    width: 100%;
+
+    a {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .my-points {
+    .contracts__pagination-block {
+      display: block;
+    }
+
+    .contracts-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .table-mobile__item {
+      margin: 0 0 8px;
+      width: calc((100% - 8px) / 2);
+      padding: 28px 18px;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+
+      &.points-done {
+        p {
+          color: $text-minor;
+        }
+
+        .table-mobile__text-minor {
+          color: #94a0b1;
+        }
+
+        .reports__status {
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .my-points__main-points {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    img {
+      margin: 0 0 24px;
+    }
+  }
+
+  .my-points__main-points-list {
+    flex-direction: column;
+    width: 100%;
+
+    div {
+      width: 100%;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #d1d8e1;
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+      }
+
+      &:not(:first-child) {
+        span {
+          color: $text-minor;
+        }
+      }
+    }
+  }
+
+  .my-points__main-register {
+    flex-direction: column;
+    align-items: flex-start;
+
+    a {
+      width: 100%;
+      margin: 24px 0 0;
+    }
+  }
+
+  .my-points {
+    .table-mobile__item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.catalogs-flyers {
+  padding-bottom: 80px;
+}
+
+.catalogs-flyers__content {
+  padding-top: 30px;
+}
+
+.catalogs-flyers__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalogs-flyers__item {
+  max-width: calc((100% - 120px) / 6);
+  flex-grow: 1;
+  margin: 0 0 26px;
+
+  &:not(:nth-child(6n)) {
+    margin-right: 24px;
+  }
+}
+
+.catalogs-flyers__card-img-block {
+  position: relative;
+  width: 100%;
+  padding-top: 141%;
+  background-color: $bg;
+  border-radius: 4px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 0 15px;
+}
+
+.catalogs-flyers__card-img-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalogs-flyers__card-link-download,
+.catalogs-flyers__card-link-preview {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #94a0b1;
+  transition: color 0.2s;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    color: $text-main;
+  }
+}
+
+.catalogs-flyers__card-link-preview {
+  top: 51px;
+}
+
+.catalogs-flyers__card-title {
+  @include font(14px, 21px, 400, $text-main);
+  margin: 0 0 5px;
+}
+
+.catalogs-flyers__card-size {
+  @include font(14px, 21px, 400, #94a0b1);
+}
+
+@media (max-width: 1150px) {
+  .catalogs-flyers__item {
+    max-width: calc((100% - 96px) / 5);
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(5n)) {
+      margin-right: 24px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .catalogs-flyers__item {
+    max-width: calc((100% - 72px) / 4);
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(4n)) {
+      margin-right: 24px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .catalogs-flyers__item {
+    max-width: calc((100% - 48px) / 3);
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 24px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .catalogs-flyers__item {
+    max-width: calc((100% - 24px) / 2);
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(2n)) {
+      margin-right: 24px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.title-block__title-btn {
+  display: flex;
+  padding-top: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h1 {
+    @include font(32px, 38px, 500, $text-main);
+    margin: 0 0 24px;
+  }
+}
+
+.title-block__btn {
+  width: 266px;
+}
+
+@include tablet {
+  .title-block__title-btn {
+    flex-direction: column;
+  }
+}
+
+@include mobile {
+  .title-block__btn {
+    width: 100%;
+  }
+}

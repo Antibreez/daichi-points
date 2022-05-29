@@ -1,0 +1,19 @@
+.brand-chip {
+  min-width: 100px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $bg;
+  border-radius: 4px;
+  transition: border-color 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    border-color: #e6e6ef;
+  }
+
+  &.active {
+    border-color: $primary;
+  }
+}

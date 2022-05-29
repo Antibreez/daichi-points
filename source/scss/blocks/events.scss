@@ -1,0 +1,288 @@
+.events__date-list {
+  margin: 0;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.events__date-item {
+  &:not(:last-child) {
+    margin: 0 0 24px;
+  }
+}
+
+.events__date-title {
+  @include font(18px, 29px, 600, $text-main);
+  margin: 0 0 16px;
+}
+
+.events__list {
+  margin: 0;
+  padding: 0;
+}
+
+.events__item {
+  &:not(:last-child) {
+    margin: 0 0 8px;
+  }
+}
+
+.events__card {
+  padding: 32px;
+  min-height: 235px;
+  display: flex;
+  border: 2px solid $bg;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.events__card-info {
+  width: 24%;
+  max-width: 300px;
+  margin-right: 32px;
+  flex-shrink: 0;
+}
+
+.events__card-time {
+  display: block;
+  @include font(24px, 29px, 600, $primary);
+  margin: 0 0 8px;
+}
+
+.events__card-audience-list {
+  margin: 0;
+  padding: 0;
+}
+
+.events__card-audience-item {
+  @include font(16px, 19px, 400, $text-minor);
+  margin: 0 0 4px;
+}
+
+.events__card-subject {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.events__card-title {
+  @include font(18px, 22px, 500, $text-main);
+  margin: 0 0 24px;
+  padding-right: 24px;
+  width: calc(100% - 290px);
+  flex-grow: 1;
+}
+
+.events__card-tags {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 290px);
+}
+
+.events-catalog {
+  .events__card-tags,
+  .events__card-title {
+    width: 55%;
+  }
+}
+
+.events__card-tag {
+  @include font(12px, 15px, 400, $text-minor);
+
+  &:not(:last-child) {
+    margin-right: 4px;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin-left: 4px;
+      margin-bottom: 2px;
+      background-color: $text-minor;
+      border-radius: 50%;
+    }
+  }
+}
+
+.events__card-person-block {
+  width: 290px;
+  max-width: 290px;
+  flex-shrink: 0;
+}
+
+.events-catalog {
+  .events__card-person-block {
+    width: 45%;
+    max-width: 45%;
+  }
+}
+
+.events__card-person {
+  display: flex;
+}
+
+.events__card-person-img-block {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.events__card-person-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.events__card-person-name {
+  @include font(16px, 19px, 600, $text-main);
+  margin: 0 0 4px;
+}
+
+.events__card-person-role {
+  @include font(12px, 15px, 400, $text-minor);
+  margin: 0;
+}
+
+.events.events--past {
+  .events__card {
+    background-color: $bg;
+  }
+
+  .events__card-time,
+  .events__card-title,
+  .events__card-person-name,
+  .events__date-title {
+    color: $text-minor;
+  }
+}
+
+@include tablet {
+  .events__card {
+    flex-direction: column;
+    min-height: 278px;
+  }
+
+  .events__card-info {
+    width: 100%;
+    max-width: none;
+    min-width: auto;
+    margin: 0 0 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .events__card-audience-list {
+    width: 47%;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .events__card-audience-item {
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  .events__card-subject {
+    width: 100%;
+  }
+
+  .events__card-title {
+    width: auto;
+    max-width: 390px;
+  }
+
+  .events__card-person-block {
+    width: 200px;
+    margin-left: auto;
+  }
+
+  .events-catalog {
+    .events__card-person-block {
+      width: 200px;
+      margin-left: auto;
+    }
+  }
+
+  .events__card-tags {
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  .events-catalog {
+    .events__card-tags {
+      margin-top: 70px;
+      width: 100%;
+    }
+
+    .events__card-title {
+      width: 100%;
+      padding-right: 40%;
+      max-width: none;
+    }
+  }
+}
+
+@include mobile {
+  .events__card-audience-list {
+    display: none;
+  }
+
+  .events__card-info {
+    margin: 0 0 16px;
+  }
+
+  .events__card-time {
+    margin-bottom: 0;
+  }
+
+  .events__card-title {
+    width: 100%;
+    padding-right: 0;
+    margin: 0 0 16px;
+    order: 1;
+  }
+
+  .events__card-person-block {
+    width: 100%;
+    order: 3;
+    margin-left: 0;
+  }
+
+  .events-catalog {
+    .events__card-person-block {
+      width: 100%;
+      order: 3;
+      margin-left: 0;
+    }
+  }
+
+  .events__card-tags {
+    order: 2;
+    margin: 0 0 24px;
+  }
+
+  .events-catalog {
+    .events__card-tags {
+      order: 2;
+      margin: 0 0 24px;
+    }
+
+    .events__card-title {
+      padding-right: 0;
+    }
+  }
+}

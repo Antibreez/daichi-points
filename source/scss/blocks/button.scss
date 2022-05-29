@@ -1,0 +1,189 @@
+.btn-primary,
+.btn-secondary,
+.btn-secondary-arrow-v {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  height: auto;
+  padding: 12px 16px 11px;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2858ff;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #113ee0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  background-color: #113ee0;
+  color: #fff;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+}
+
+.btn-primary:disabled:hover {
+  background-color: #2858ff;
+  cursor: default;
+}
+
+.btn-secondary,
+.btn-secondary-arrow-v {
+  padding: 10px 16px 9px;
+  border: 2px solid #2858ff;
+  color: #1a1a1a;
+  background-color: transparent;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary-arrow-v:hover,
+.btn-secondary-arrow-v:focus {
+  color: #2858ff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-secondary:hover svg,
+.btn-secondary:focus svg,
+.btn-secondary-arrow-v:hover svg,
+.btn-secondary-arrow-v:focus svg {
+  fill: #2858ff;
+}
+
+.btn-secondary:active,
+.btn-secondary-arrow-v:active {
+  color: #2858ff;
+  background-color: transparent;
+}
+
+.btn-secondary:active svg,
+.btn-secondary-arrow-v:active svg {
+  fill: #2858ff;
+}
+
+.btn-secondary:disabled,
+.btn-secondary-arrow-v:disabled {
+  opacity: 0.5;
+}
+
+.btn-secondary:disabled:hover,
+.btn-secondary-arrow-v:disabled:hover {
+  color: #1a1a1a;
+  cursor: default;
+}
+
+.btn-secondary-arrow-v {
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+.btn-secondary-arrow-v * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-secondary-arrow-v svg {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.btn-secondary-arrow-v.opened svg {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.btn-arrow,
+.btn-arrow-v {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2858ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-arrow:hover,
+.btn-arrow:focus,
+.btn-arrow-v:hover,
+.btn-arrow-v:focus {
+  color: #113ee0;
+  cursor: pointer;
+}
+
+.btn-arrow svg,
+.btn-arrow-v svg {
+  margin-left: 4px;
+  fill: #2858ff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-arrow-v svg {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.btn-arrow:hover svg,
+.btn-arrow-v:hover svg {
+  fill: #113ee0;
+}
+
+.btn-arrow-v.opened svg {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.btn-text {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #2858ff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-text:hover,
+.btn-text:active,
+.btn-text:focus {
+  background-color: transparent;
+}
+
+.btn-text:hover,
+.btn-text:focus {
+  cursor: pointer;
+  color: #113ee0;
+}

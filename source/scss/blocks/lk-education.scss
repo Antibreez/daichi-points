@@ -1,0 +1,132 @@
+.lk-education {
+  padding-bottom: 80px;
+}
+
+.lk-education__title-block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 30px;
+}
+
+.lk-education__title {
+  @include font(32px, 37px, 500, $text-main);
+  margin: 0;
+  padding-right: 40px;
+}
+
+.lk-education__main-link {
+  @include font(15px, 23px, 400, $primary);
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $primary-dark;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    transform: rotate(90deg);
+  }
+}
+
+.lk-education__tabs {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto 40px;
+
+  .lk-education__tabs-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      width: calc(100% - 80px);
+      height: 2px;
+      background-color: $bg;
+    }
+  }
+}
+
+.lk-education__tab {
+  padding: 29px 34px;
+  @include font(16px, 22px, 500, $text-main);
+  width: max-content;
+  min-width: 250px;
+  text-align: center;
+  z-index: 2;
+  border: none;
+  border-bottom: 2px solid $bg;
+  background-color: #fff;
+
+  &.active {
+    border-bottom: 2px solid $primary;
+    color: $primary;
+  }
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &:first-child {
+    margin-left: $desktop-gap;
+  }
+
+  &:last-child {
+    margin-right: $desktop-gap;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.lk-education__programs {
+  .education-programs__programs-list {
+    padding-top: 0;
+  }
+}
+
+@include tablet {
+  .lk-education__tab {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+}
+
+@include mobile {
+  .lk-education__title-block-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lk-education__title {
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .lk-education__tab {
+    padding: 20px 25px;
+    min-width: auto;
+
+    &:first-child {
+      margin-left: $mobile-gap;
+    }
+
+    &:last-child {
+      margin-right: $mobile-gap;
+    }
+  }
+
+  .lk-education__certificates-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

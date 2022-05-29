@@ -1,0 +1,479 @@
+.about-program__promo {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about-program__promo-text {
+  width: 50%;
+  background-color: #f4f4f8;
+  padding: 48px;
+}
+
+.about-program__promo-title {
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 500;
+  color: $text-main;
+  margin: 0 0 16px;
+}
+
+.about-program__promo-desc {
+  @include font(18px, 27px);
+  color: $text-minor;
+  margin: 0 0 36px;
+}
+
+.about-program__promo-register {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.about-program__promo-pic {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/d-points-promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-program__promo-pic-label {
+  @include font(18px, 27px, 400, #ffffff);
+  text-align: center;
+  padding-top: 8px;
+}
+
+.about-program__reason {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 80px;
+}
+
+.about-program__reason-card {
+  width: auto;
+  margin-right: 24px;
+  height: auto;
+
+  &:first-child {
+    margin-left: 40px;
+  }
+
+  &:last-child {
+    margin-right: 40px;
+  }
+}
+
+.about-program__points-card {
+  width: 266px;
+
+  .catalog-grid-item {
+    padding: 0 18px 18px 18px;
+  }
+
+  .catalog-grid-item__title {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 15px;
+  }
+
+  .catalog-item-props {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 3px 5px 0px;
+  }
+
+  .catalog-grid-item-footer {
+    padding-top: 40px;
+  }
+
+  .price-pane__current {
+    font-size: 20px;
+    line-height: 27px;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .amount {
+    width: 70px;
+    height: 33px;
+  }
+
+  .amount-buy-btn {
+    height: 33px;
+  }
+
+  .ico-amount-cart {
+    width: 20px;
+    height: 20px;
+    top: -2px;
+  }
+
+  .price-pane__old {
+    @include font(11px, 16px, 400, $text-minor);
+    vertical-align: middle;
+    margin-left: 6px;
+    text-decoration: line-through;
+  }
+
+  .catalog-grid-item__img {
+    margin: 2px -16px 26px -16px;
+  }
+
+  .ico-favorites {
+    width: 15px;
+    height: 17px;
+  }
+
+  .catalog-grid-item__favorites {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.about-program__points {
+  display: flex;
+}
+
+.about-program__points-text {
+  max-width: 590px;
+  padding-right: 24px;
+  margin-right: auto;
+}
+
+.about-program__points-desc {
+  @include font(18px, 27px, 400, $text-minor);
+  margin: 0;
+}
+
+.about-program__points-pic {
+  flex-shrink: 0;
+  position: relative;
+  padding-left: 136px;
+  padding-top: 40px;
+
+  .d-points-chip {
+    position: absolute;
+    top: 131px;
+    left: 0;
+  }
+}
+
+.about-program__points-arrow {
+  position: absolute;
+  top: 194px;
+  left: 63px;
+  width: 81px;
+  height: 232px;
+  background-image: url("../img/points-arrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-program__points-spend {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 314px;
+  padding: 23px;
+  background: linear-gradient(98.08deg, #fdc830 3.48%, #f37335 98.15%);
+  box-shadow: 0px 3.30042px 52.1004px rgba(243, 115, 53, 0.5);
+  border-radius: 13px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+  }
+
+  &::after {
+    top: 50%;
+    right: 24px;
+    width: 35px;
+    height: 3px;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    top: 50%;
+    right: 50px;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}
+
+.about-program__points-spend-title {
+  @include font(15px, 19px, 600, #ffffff);
+  margin: 0 0 3px;
+}
+
+.about-program__points-spend-desc {
+  @include font(12px, 18px, 400, #ffffff);
+  margin: 0;
+}
+
+.about-program__questions {
+  padding: 28px;
+  border: 1px solid #f4f4f8;
+  border-radius: 5px;
+}
+
+.about-program__question {
+  border-bottom: 2px solid #f4f4f8;
+}
+
+.about-program__question-title {
+  position: relative;
+  @include font(18px, 23px, 500, $text-main);
+  padding: 24px 40px 24px 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $text-main;
+    border-radius: 1px;
+  }
+
+  &::before {
+    width: 22px;
+    height: 2px;
+    top: 32px;
+    right: 0;
+  }
+
+  &::after {
+    width: 2px;
+    height: 22px;
+    top: 22px;
+    right: 10px;
+    transform-origin: center;
+  }
+
+  &.opened::after {
+    display: none;
+  }
+}
+
+.about-program__question-answer {
+  display: none;
+  @include font(14px, 21px, 400, $text-main);
+  padding: 0 40px 24px 0;
+}
+
+@include tablet {
+  .about-program__promo {
+    flex-direction: column-reverse;
+  }
+
+  .about-program__promo-text {
+    width: 100%;
+  }
+
+  .about-program__promo-pic {
+    width: 100%;
+    padding-top: 139px;
+    padding-bottom: 116px;
+  }
+
+  .about-program__points {
+    flex-direction: column;
+  }
+
+  .about-program__points-text {
+    padding-right: 0;
+    margin: 0 0 48px;
+    max-width: none;
+  }
+
+  .about-program__points-pic {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+@include mobile {
+  .about-program__promo-pic {
+    padding-top: 57px;
+    padding-bottom: 38px;
+  }
+
+  .about-program__promo-pic-label {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about-program__promo-text {
+    padding: 24px;
+  }
+
+  .about-program__promo-title {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0 0 16px;
+  }
+
+  .about-program__promo-desc {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 24px;
+  }
+
+  .about-program__promo-register {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .about-program__reason-card {
+    margin-right: 8px;
+
+    &:first-child {
+      margin-left: 18px;
+    }
+
+    &:last-child {
+      margin-right: 18px;
+    }
+  }
+
+  .about-program__points-desc {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .about-program__points-card {
+    width: 151px;
+
+    .catalog-grid-item__img {
+      margin: -8px -8px 26px -8px;
+    }
+
+    .ico-favorites {
+      width: 8px;
+      height: 10px;
+    }
+
+    .catalog-grid-item__favorites {
+      top: 0px;
+      right: 9px;
+    }
+
+    .catalog-grid-item {
+      padding: 9px;
+      padding-bottom: 12px;
+    }
+
+    .catalog-grid-item__title {
+      font-size: 8px;
+      line-height: 13px;
+      margin: 0 0 5px;
+    }
+
+    .catalog-item-props {
+      padding: 2px 3px 0;
+      font-size: 7px;
+      line-height: 10px;
+    }
+
+    .price-pane {
+      font-size: 15px;
+      height: 17px;
+    }
+
+    .price-pane__current {
+      font-size: 11px;
+      line-height: 16px;
+    }
+
+    .amount {
+      width: 40px;
+      height: 19px;
+    }
+
+    .amount-buy-btn {
+      height: 19px;
+      border-radius: 2px;
+    }
+
+    .ico-amount-cart {
+      width: 12px;
+      height: 12px;
+      top: -1px;
+      left: 0;
+    }
+
+    .price-pane__old {
+      font-size: 7px;
+      line-height: 9px;
+      margin-left: 3px;
+    }
+
+    .catalog-grid-item__img {
+      margin-bottom: 13px;
+    }
+
+    .catalog-grid-item-footer {
+      padding: 0;
+    }
+  }
+
+  .about-program__points-pic {
+    padding-left: 77px;
+    padding-top: 23px;
+
+    .d-points-chip {
+      top: 75px;
+    }
+  }
+
+  .about-program__points-spend {
+    left: 26px;
+    width: 179px;
+    padding: 13px;
+    box-shadow: 0px 1.87631px 29.6194px rgba(243, 115, 53, 0.5);
+    border-radius: 8px;
+
+    &::after {
+      right: 14px;
+      width: 20px;
+      height: 2px;
+    }
+
+    &::before {
+      right: 28px;
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  .about-program__points-spend-title {
+    font-size: 9px;
+    line-height: 11px;
+    margin: 0 0 2px;
+  }
+
+  .about-program__points-spend-desc {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
+  .about-program__points-arrow {
+    width: 43px;
+    height: 123px;
+    top: 111px;
+    left: 36px;
+  }
+
+  .about-program__questions {
+    padding: 18px;
+  }
+}

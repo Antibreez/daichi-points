@@ -1,0 +1,32 @@
+// // ШРИФТЫ
+// @mixin font-face($name, $filename, $weight, $style: normal) {
+//   @font-face {
+//     font-family: $name;
+//     font-weight: $weight;
+//     font-style: $style;
+//     font-display: swap;
+//     src: local(""), url("../fonts/" + $filename + ".woff") format("woff"),
+//       url("../fonts/" + $filename + ".woff2") format("woff2");
+//   }
+// }
+
+//Разрешения
+@mixin tablet {
+  @media (max-width: ($tablet - 1px)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: ($mobile - 1px)) {
+    @content;
+  }
+}
+
+//Параметры шрифта
+@mixin font($fontSize, $lineHeight, $fontWeight: 400, $color: $text-main) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+  color: $color;
+}

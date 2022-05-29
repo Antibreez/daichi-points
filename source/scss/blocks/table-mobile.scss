@@ -1,0 +1,119 @@
+.table-mobile {
+  width: 100%;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.table-mobile * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.table-mobile__item {
+  display: block;
+  width: calc(100% - 48px);
+  padding: 28px 18px 32px;
+  margin: 0 auto;
+  background-color: #f4f4f8;
+  border-radius: 5px;
+  border: none;
+  height: 100%;
+}
+
+.table-mobile__item:hover {
+  background-color: #f4f4f8;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.table-mobile__text-block-mb {
+  margin-bottom: 24px;
+}
+
+.table-mobile__text-main,
+.table-mobile__text-main-g {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.table-mobile__text-main-g {
+  color: #94a0b1;
+}
+
+.table-mobile__text-minor {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+  margin: 0;
+  color: #94a0b1;
+}
+
+.table-mobile__text-minor.alert {
+  color: #fc4242;
+}
+
+.table-mobile .contracts__status-container,
+.table-mobile .contract-services__status-container {
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.table-mobile .contracts__status-container button,
+.table-mobile .contract-services__status-container button {
+  text-align: left;
+}
+
+.table-mobile .contracts__status-container .checkbox-btn__checkbox,
+.table-mobile .contract-services__status-container .checkbox-btn__checkbox {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.table-mobile .contracts__status-container .checkbox-btn,
+.table-mobile .contract-services__status-container .checkbox-btn {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.table-mobile .contracts__status-container > p,
+.table-mobile .contracts__status-container > object,
+.table-mobile .contracts__status-container > div,
+.table-mobile .contract-services__status-container > p,
+.table-mobile .contract-services__status-container > object,
+.table-mobile .contract-services__status-container > div {
+  margin: 0;
+  text-align: left;
+}
+
+.table-mobile .contracts__status-container > p:not(:last-child),
+.table-mobile .contracts__status-container > object:not(:last-child),
+.table-mobile .contracts__status-container > div:not(:last-child),
+.table-mobile .contract-services__status-container > p:not(:last-child),
+.table-mobile .contract-services__status-container > object:not(:last-child),
+.table-mobile .contract-services__status-container > div:not(:last-child) {
+  margin-bottom: 24px;
+}

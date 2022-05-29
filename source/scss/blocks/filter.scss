@@ -1,0 +1,78 @@
+.filter-section--event-subject {
+  .filter-section-toggle {
+    max-height: 142px;
+  }
+}
+
+.filter-section--event-brand {
+  .filter-section-toggle {
+    max-height: 220px;
+  }
+}
+
+.filter-section--event-category {
+  .filter-section-toggle.swiper {
+    max-height: 259px;
+
+    .field {
+      margin: 6px 0;
+    }
+  }
+}
+
+.filter-section-toggle.swiper {
+  .field {
+    margin: 0;
+  }
+
+  .field-input-radio input[type="checkbox"] + span {
+    line-height: 24px;
+  }
+
+  .field-input-radio input[type="checkbox"] + span {
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.filter-scrollbar {
+  background-color: transparent;
+
+  .swiper-scrollbar-drag {
+    background-color: #e6e6ef;
+  }
+}
+
+.filter--events-catalog,
+.filter--programs-catalog {
+  .filter-footer__reset {
+    width: 100%;
+  }
+}
+
+.filter__mobile-btn {
+  @include font(15px, 18px, 500, $text-main);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  span {
+    padding-top: 3px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}
+
+@include tablet {
+  .filter__mobile-btn {
+    display: flex;
+  }
+}

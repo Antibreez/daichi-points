@@ -1,0 +1,32 @@
+.education-events {
+  padding: 40px 0;
+}
+
+.education-events__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.education-events__title {
+  width: calc(100% - 80px);
+  margin: 0 auto 40px;
+}
+
+.education-events__events-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  width: calc(100% - 80px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include mobile {
+  .education-events__title {
+    width: calc(100% - 36px);
+  }
+
+  .education-events__events-list {
+    width: calc(100% - 36px);
+  }
+}

@@ -1,0 +1,60 @@
+.programs-catalog {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.programs-catalog__popular {
+  padding-top: 22px;
+}
+
+.programs-catalog__popular-container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.programs-catalog__search {
+  margin: 0 0 24px;
+}
+
+.programs-catalog {
+  .education-programs__programs-list {
+    padding-top: 0;
+  }
+
+  .education-programs__program-item {
+    max-width: calc((100% - 32px) / 3);
+    flex-grow: 1;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+
+    &:nth-child(n) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 16px;
+    }
+  }
+}
+
+.programs-catalog__pagination {
+  padding-top: 16px;
+
+  .programs-catalog__show-all {
+    margin: 0 0 32px;
+  }
+}
+
+@include mobile {
+  .programs-catalog {
+    .education-programs__program-item {
+      max-width: none;
+      width: 100%;
+
+      &:nth-child(n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
