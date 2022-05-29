@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" media="all" href="libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" media="all" href="libs/simplebar/simplebar.css" />
+    <link rel="stylesheet" media="all" href="libs/slick/slick.css" />
+    <link rel="stylesheet" media="all" href="libs/daterange/daterangepicker.css" />
+    <link rel="stylesheet" media="all" href="libs/jqui/jquery-ui.css" />
+    <link rel="stylesheet" media="all" href="libs/select2/css/select2.min.css" />
+
+    <link rel="stylesheet" href="external/fonts/font.css" />
+    <link rel="stylesheet" href="external/styles.css" />
+    <link rel="stylesheet" href="external/template_styles.css" />
+    <link rel="stylesheet" href="external/additional.css" />
+
+    <script type="text/javascript" src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="libs/popper/popper.min.js"></script>
+    <script type="text/javascript" src="libs/popper/popper-init.js"></script>
+    <script type="text/javascript" src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="libs/select2/js/select2.min.js"></script>
+    <script type="text/javascript" src="libs/select2/js/select2.init.js"></script>
+    <script type="text/javascript" src="libs/mask/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="libs/simplebar/simplebar.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="libs/daterange/moment.min.js"></script>
+    <script type="text/javascript" src="libs/daterange/daterangepicker.js"></script>
+
+    <script type="text/javascript" src="external/main.js"></script>
+    <script type="text/javascript" src="external/temp.js"></script>
+    <script type="text/javascript" src="external/only-layout.js"></script>
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Учебный центр</title>
+  </head>
+  <body class="js-no-scroll">
+    <header class="wrap-header">
+      <div class="wrap-header-top">
+        <div class="header-top">
+          <div class="header-city"><span>Волгоград</span></div>
+          <div class="wrap-header-top-nav">
+            <ul class="header-top-nav">
+              <li class="header-top-nav__item">
+                <a class="header-top-nav__link" href="#">Акции</a>
+              </li>
+              <li class="header-top-nav__item">
+                <a class="header-top-nav__link" href="#">Новости</a>
+              </li>
+              <li class="header-top-nav__item">
+                <a class="header-top-nav__link" href="#">Поддержка</a>
+              </li>
+              <li class="header-top-nav__item">
+                <a class="header-top-nav__link" href="#">О «Даичи»</a>
+              </li>
+              <li class="header-top-nav__item">
+                <a class="header-top-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header">
+          <div class="header-logo">
+            <a href="#"><img src="../images/logo.svg" /></a>
+          </div>
+          <div class="header-main-nav-btn">
+            <div class="wrap-main-nav-btn">
+              <a class="main-nav-btn" href="#"
+                ><span class="ico-humb-cat"><span></span><span></span><span></span></span>Каталог</a
+              >
+            </div>
+          </div>
+          <div class="header-search">
+            <div class="search-pane">
+              <div class="wrap-search-pane-input">
+                <input class="search-pane-input" type="text" placeholder="Поиск по оборудованию и документации" />
+                <button class="search-pane-btn">
+                  <span class="ico-search">
+                    <svg class="ico-svg">
+                      <use xlink:href="#ico-search"></use></svg
+                  ></span>
+                </button>
+                <button class="search-pane-btn search-pane-btn_clear">
+                  <svg class="ico-svg">
+                    <use xlink:href="#ico-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header-toolbar">
+            <div class="header-favorite">
+              <a class="header-favorite__link" href="#"
+                ><i class="ico-favorite">
+                  <svg class="ico-svg">
+                    <use xlink:href="#ico-favorites"></use></svg
+                  ><span class="header-cart__count">3</span></i
+                ><span>Избранное</span></a
+              >
+            </div>
+            <div class="header-cart">
+              <a class="header-cart__link" href="#"
+                ><span class="ico-cart">
+                  <svg class="ico-svg">
+                    <use xlink:href="#ico-h-cart"></use></svg
+                  ><span class="header-cart__count">3</span></span
+                ><span class="header-cart__title">Корзина</span></a
+              >
+            </div>
+            <div class="wrap-header-login">
+              <div class="header-login">
+                <a
+                  class="header-login__link has--arrow js--open-tooltip"
+                  href="#"
+                  data-tooltip-id="personal-dropdown"
+                  data-position="bottom-end"
+                  >Мой кабинет</a
+                >
+                <div class="is--hidden" id="personal-dropdown">
+                  <div class="dropdown-menu-dropdown dropdown-menu-dropdown_personal">
+                    <ul class="dropdown-menu-list">
+                      <li><a href="#">Первый пункт меню</a></li>
+                      <li><a href="#">Сначала дорогие</a></li>
+                      <li>
+                        <a href="#">Второй пункт меню размером в две строчки</a>
+                      </li>
+                      <li><a href="#">Третий пункт меню</a></li>
+                      <li><a href="#">Выход</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-main-nav">
+          <div class="main-nav">
+            <div class="main-nav__col">
+              <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Кондиционирование</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Настенные сплит-системы</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Мультисплит-системы</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Кассетные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Канальные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Напольно-потолочные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Колонные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Оконные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Мобильные кондиционеры</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-nav__col">
+              <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Вентиляция</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Воздухоочистители</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Компактные вентиляционные установки</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-nav__col">
+              <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Отопление</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Чугунные твердотопливные</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Напольные газовые конденсационные</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Чугунные газовые</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Стальные твердотопливные</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Настенные газовые конденсационные</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Настенные газовые</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Конвекторы</a>
+                </li>
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-nav__col">
+              <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Распродажа</a>
+                </li>
+              </ul>
+              <ul class="main-nav-list">
+                <li class="main-nav-list__item">
+                  <a class="main-nav-list__link" href="#">Спецпредложения</a>
+                </li>
+              </ul>
+              <div class="main-nav-slider">
+                <div class="main-nav-slider__img">
+                  <a href="#"><img src="../images/main-nav-pic.png" /></a>
+                </div>
+                <div class="main-nav-slider__img">
+                  <a href="#"><img src="../images/main-nav-pic.png" /></a>
+                </div>
+                <div class="main-nav-slider__img">
+                  <a href="#"><img src="../images/main-nav-pic.png" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header-mobile">
+      <div class="header-mobile__logo"><img src="../images/logo.svg" /></div>
+      <div class="header-mobile__toolbar">
+        <a class="header-mobile__btn js--mob-nav-open" href="#"
+          ><span class="ico-humburger"><span></span><span></span><span></span></span
+        ></a>
+      </div>
+    </div>
+    <div class="header-mobile-search">
+      <div class="search-pane">
+        <div class="wrap-search-pane-input">
+          <input class="search-pane-input" type="text" placeholder="Поиск по оборудованию и документации" />
+          <button class="search-pane-btn">
+            <span class="ico-search">
+              <svg class="ico-svg">
+                <use xlink:href="#ico-search"></use></svg
+            ></span>
+          </button>
+          <button class="search-pane-btn search-pane-btn_clear">
+            <svg class="ico-svg">
+              <use xlink:href="#ico-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-mobile-catalog-nav">
+      <div class="mobile-catalog-nav">
+        <div class="mobile-catalog-nav__header">
+          <!-- TODO: тут пусть клик по всему заголовку возвращает назад, добавлена иконка назад--><a
+            class="mobile-catalog-nav__title js--back"
+            href="#"
+            ><span class="mobile-catalog-nav__back">
+              <svg class="ico-svg">
+                <use xlink:href="#ico-arrow-back"></use></svg></span
+            >Каталог</a
+          >
+          <div class="mobile-catalog-nav__close">
+            <a class="mobile-catalog-nav__link js--mobile-catalog-close" href="#">
+              <svg class="ico-svg">
+                <use xlink:href="#ico-close"></use></svg
+            ></a>
+          </div>
+        </div>
+        <div class="mobile-catalog-nav__body">
+          <div class="mobile-catalog-nav-section">
+            <a class="mobile-catalog-nav-section__title" href="#">Кондиционирование</a>
+            <div class="mobile-catalog-nav-section__body">
+              <ul class="mobile-catalog-nav-list">
+                <li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act">
+                  <a class="mobile-catalog-nav-list__link" href="#">Настенные сплит-системы</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Мультисплит-системы</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Кассетные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Канальные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Напольно-потолочные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Колонные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Оконные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Мобильные кондиционеры</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-catalog-nav-section">
+            <a class="mobile-catalog-nav-section__title" href="#">Вентиляция</a>
+            <div class="mobile-catalog-nav-section__body">
+              <ul class="mobile-catalog-nav-list">
+                <li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act">
+                  <a class="mobile-catalog-nav-list__link" href="#">Воздухоочистители</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Компактные вентиляционные установки</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-catalog-nav-section">
+            <a class="mobile-catalog-nav-section__title" href="#">Отопление</a>
+            <div class="mobile-catalog-nav-section__body">
+              <ul class="mobile-catalog-nav-list">
+                <li class="mobile-catalog-nav-list__item mobile-catalog-nav-list__item_act">
+                  <a class="mobile-catalog-nav-list__link" href="#">Чугунные твердотопливные</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Напольные газовые конденсационные</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Чугунные газовые</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Стальные твердотопливные</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Настенные газовые конденсационные</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Настенные газовые</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Конвекторы</a>
+                </li>
+                <li class="mobile-catalog-nav-list__item">
+                  <a class="mobile-catalog-nav-list__link" href="#">Аксессуары</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mobile-catalog-nav-section">
+            <a class="mobile-catalog-nav-section__title is--no-dropdown" href="#">Распродажа</a>
+          </div>
+          <div class="mobile-catalog-nav-section">
+            <a class="mobile-catalog-nav-section__title is--no-dropdown" href="#">Спецпредложения</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-mobile-menu">
+      <div class="mobile-menu">
+        <div class="mobile-menu-header">
+          <div class="header-city header-city_mobile">
+            <a href="#">Волгоград</a>
+          </div>
+          <a class="js--mob-nav-close is--open" href="#"
+            ><span class="ico-humburger"><span></span><span></span><span></span></span
+          ></a>
+        </div>
+        <div class="mobile-menu-top">
+          <div class="mobile-menu-catalog">
+            <a class="main-nav-mobile-btn js--mobile-catalog-open" href="#"
+              ><span class="ico-humb-cat"><span></span><span></span><span></span></span>Каталог</a
+            >
+          </div>
+          <div class="header-cart-mobile">
+            <a class="header-cart-mobile__link" href="#"
+              ><span class="ico-cart">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-h-cart"></use></svg
+                ><span class="header-cart-mobile__count">13</span></span
+              ><span class="header-cart-mobile__title">Корзина</span></a
+            >
+          </div>
+        </div>
+        <ul class="mobile-personal-nav-list">
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-home"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Дашборд</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-box"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Заказы</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-percent"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Мои скидки и закупки</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-favorites-nav"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Избранное</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-account"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Управление пользователями дилера</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-move"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Взаиморасчёты</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-file"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Список плательщиков</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-truck"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Доставка</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-madal"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Технико-коммерческие предложения</span></a
+            >
+          </li>
+          <li class="mobile-personal-nav-list__item">
+            <a class="mobile-personal-nav-list__link" href="#"
+              ><span class="ico-personal-nav">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-view-grid"></use></svg></span
+              ><span class="mobile-personal-nav-list__text">Дополнительно</span></a
+            >
+          </li>
+        </ul>
+        <div class="mobile-menu-devider"></div>
+        <ul class="mobile-nav mobile-nav_gray">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Акции</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Новости</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Обучение и семинары</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">О «Даичи»</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-menu-devider"></div>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="#">Выход</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="education-header">
+      <div class="education-header__container container">
+        <div class="education-header__content">
+          <a href="#" class="education-header__logo" aria-label="Учебный центр">
+            <img src="img/education-logo.svg" alt="Учебный центр" />
+          </a>
+          <nav class="education-header__nav">
+            <ul class="education-header__nav-list">
+              <li class="education-header__nav-item">
+                <a href="#" class="education-header__nav-link">
+                  <span class="text">Программы обучения</span>
+                  <span class="icon icon--programs"></span>
+                </a>
+              </li>
+              <li class="education-header__nav-item">
+                <a href="#" class="education-header__nav-link">
+                  <span class="text"> События </span>
+                  <span class="icon icon--events"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-promo">
+      <div class="education-promo__container container">
+        <div class="education-promo__content">
+          <div class="education-promo__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Картинка для мобилок -->
+                  <source media="(max-width: 767px)" srcset="img/promo-slider-2-mobile.jpg" />
+                  <!-- Картинка для десктопа -->
+                  <img src="img/promo-slider-2.jpg" alt="Slide" />
+                </picture>
+                <div class="education-promo__text-block">
+                  <h1 class="education-promo__title">Программа обучения</h1>
+                  <b class="education-promo__slogan">VRV/VRF системы</b>
+                  <p class="education-promo__desc">
+                    Проектирование систем. Водная система VRV/VRF. Типы систем VRV/VRF. Особенности проектирования
+                    систем для высотных зданий. Опыт проектирования объектов Даичи.
+                  </p>
+                  <a href="#" class="education-promo__login-btn button"> Подробнее о курсе </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- Картинка для мобилок -->
+                  <source media="(max-width: 767px)" srcset="img/promo-slider-1-mobile.jpg" />
+                  <!-- Картинка для десктопа -->
+                  <img src="img/promo-slider-1.jpg" alt="Slide" />
+                </picture>
+                <div class="education-promo__text-block">
+                  <h1 class="education-promo__title">Программа обучения</h1>
+                  <b class="education-promo__slogan"> Программа </b>
+                  <p class="education-promo__desc">Тема. Тема. Тема.</p>
+                  <a href="#" class="education-promo__login-btn button"> Подробнее о курсе </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-advantages">
+      <div class="education-advantages__container container">
+        <div class="education-advantages__content">
+          <h2 class="education-advantages__title section-title">Образование. Знание.&nbsp;Сила.</h2>
+          <p class="education-advantages__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget dictum tellus. Maecenas gravida id urna
+            at iaculis. Duis mattis nunc quis tellus eleifend, eget ultrices urna ultrices.
+          </p>
+          <ul class="education-advantages__list">
+            <li class="education-advantages__item">
+              <h3 class="education-advantages__item-title">Повышение квалификации</h3>
+              <p class="education-advantages__item-desc">
+                Повысите квалификацию по уникальным обучающим программам, разработанным с учетом фундаментальных основ
+                проектирования, монтажа и эксплуатации климатического оборудования, а также клиентоориентированности с
+                учетом реальной специфики бизнеса.
+              </p>
+            </li>
+            <li class="education-advantages__item">
+              <h3 class="education-advantages__item-title">Развитие технических знаний и навыков сотрудников</h3>
+              <p class="education-advantages__item-desc">
+                Систематическое обновление обучающих программ, ориентированных на современные задачи бизнеса Гибкий
+                график обучения на удобной электронной площадке без отрыва от производства с применением современных
+                методик обучения Получение индивидуальных консультаций по организационным и техническим вопросам по
+                проектированию, монтажу и эксплуатации климатического оборудования.
+              </p>
+            </li>
+            <li class="education-advantages__item">
+              <h3 class="education-advantages__item-title">Формирование сообщества профессионалов климата</h3>
+              <p class="education-advantages__item-desc">
+                Обучение по индивидуальной программе по вашему запросу. Развитие бизнеса с деловыми партнерами Активные
+                программы лояльности для наших партнеров. Обученные сотрудники - команда профессионалов для развития
+                вашего бизнеса и привлечения клиентов.
+              </p>
+            </li>
+          </ul>
+          <div class="education-advantages__mobile swiper">
+            <ul class="education-advantages__mobile-wrapper swiper-wrapper"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-programs">
+      <div class="education-programs__container container">
+        <div class="education-programs__content">
+          <h2 class="education-programs__title section-title">Программы обучения</h2>
+          <div class="education-programs__types-block categories">
+            <div class="categories__item">
+              <h3 class="categories__title">Популярные курсы:</h3>
+              <div class="categories__list-wrap swiper">
+                <ul class="categories__type-list swiper-wrapper">
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Для проектировщиков</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn active">Для дилеров</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Для монтажников</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Kentatsu</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Daichi</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Облачный кондиционер</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Облачный кондиционер</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="categories__types-hidden">
+              <div class="categories__item">
+                <h3 class="categories__title">Тематика:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для проектировщиков</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для дилеров</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для монтажников</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для монтажников</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="categories__item">
+                <h3 class="categories__title">Бренд:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Aurum</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Axioma</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Bosch</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Daichi</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Daikin</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Flaktwoods</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Furst</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Kentatsu</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="categories__item">
+                <h3 class="categories__title">Категория:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Облачный кондиционер</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Услуги Daichi</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Системы VRF/VRV</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="categories__toggle-btn btn-arrow">
+              <span>Показать все</span>
+              <span>Свернуть</span>
+              <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
+            </button>
+          </div>
+          <ul class="education-programs__programs-list">
+            <li class="education-programs__program-item">
+              <a href="#" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-1.jpg" alt="program-1" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">Как продавать воздух за деньги?</h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Daikin</li>
+                  <li class="education-programs__program-tag">Kentatsu</li>
+                  <li class="education-programs__program-tag">Daichi</li>
+                  <li class="education-programs__program-tag">Облачный кондиционер</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-2.jpg" alt="program-2" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">VRV/VRF системы</h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Kentatsu</li>
+                  <li class="education-programs__program-tag">Daikin</li>
+                  <li class="education-programs__program-tag">Midea</li>
+                  <li class="education-programs__program-tag">Bosch</li>
+                  <li class="education-programs__program-tag">Системы VRV/VRF</li>
+                  <li class="education-programs__program-tag">Для дилеров</li>
+                  <li class="education-programs__program-tag">Для проектировщиков</li>
+                  <li class="education-programs__program-tag">Для технических специалистов</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-3.jpg" alt="program-3" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">Как продавать воздух за деньги?</h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Daikin</li>
+                  <li class="education-programs__program-tag">Kentatsu</li>
+                  <li class="education-programs__program-tag">Daichi</li>
+                  <li class="education-programs__program-tag">Облачный кондиционер</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-4.jpg" alt="program-4" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">
+                  Монтаж никогда не будет прежним. 10 лайфхаков от мастеров дела.
+                </h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Для монтажников</li>
+                  <li class="education-programs__program-tag">Kentatsu</li>
+                  <li class="education-programs__program-tag">Daichi</li>
+                  <li class="education-programs__program-tag">Midea</li>
+                  <li class="education-programs__program-tag">Axioma</li>
+                  <li class="education-programs__program-tag">Primera</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-5.jpg" alt="program-5" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">
+                  Он был в шоке, когда увидел ЭТО. Как не облажаться при монтаже.
+                </h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Для монтажников</li>
+                  <li class="education-programs__program-tag">Kentatsu</li>
+                  <li class="education-programs__program-tag">Daichi</li>
+                  <li class="education-programs__program-tag">Midea</li>
+                  <li class="education-programs__program-tag">Axioma</li>
+                  <li class="education-programs__program-tag">Primera</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-6.jpg" alt="program-6" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">
+                  Ковид сбежал обратно в Ухань, когда увидел Daikin MC55W
+                </h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Daikin</li>
+                  <li class="education-programs__program-tag">Воздухочистители</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-7.jpg" alt="program-7" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">
+                  На всякого Егорку найдётся своя поговорка. Продаём услуги Daichi.
+                </h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Daichi</li>
+                  <li class="education-programs__program-tag">Климат Онлайн</li>
+                  <li class="education-programs__program-tag">Мобильное управление</li>
+                  <li class="education-programs__program-tag">Мой комфорт</li>
+                  <li class="education-programs__program-tag">Услуги Daichi</li>
+                </ul>
+              </a>
+            </li>
+            <li class="education-programs__program-item">
+              <a href="" class="education-programs__program-link">
+                <div class="education-programs__program-img-wrap">
+                  <img src="img/program-8.jpg" alt="program-8" class="education-programs__program-img" />
+                </div>
+                <h3 class="education-programs__program-title">Псс, кондиционер по подписке не нужен? А за комиссию?</h3>
+                <ul class="education-programs__program-tags">
+                  <li class="education-programs__program-tag">Для дилеров</li>
+                  <li class="education-programs__program-tag">Облачный кондиционер</li>
+                  <li class="education-programs__program-tag">Daichi</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+
+          <button class="education-programs__show-all btn-large">Показать все программы</button>
+
+          <div class="education-programs__main-promo"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-events">
+      <div class="education-events__container container">
+        <div class="education-events__content">
+          <h2 class="education-events__title section-title">Cобытия в феврале</h2>
+          <div class="education-events__types-block categories">
+            <div class="categories__item">
+              <h3 class="categories__title">Популярные события:</h3>
+              <div class="categories__list-wrap swiper">
+                <ul class="categories__type-list swiper-wrapper">
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Для проектировщиков</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn active">Для дилеров</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Для монтажников</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Kentatsu</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Daichi</div>
+                  </li>
+                  <li class="categories__type swiper-slide">
+                    <div class="categories__type-btn">Облачный кондиционер</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="categories__types-hidden">
+              <div class="categories__item">
+                <h3 class="categories__title">Тематика:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для проектировщиков</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для дилеров</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для монтажников</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Для монтажников</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="categories__item">
+                <h3 class="categories__title">Бренд:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Aurum</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Axioma</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Bosch</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Daichi</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Daikin</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Flaktwoods</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Furst</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Kentatsu</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="categories__item">
+                <h3 class="categories__title">Категория:</h3>
+                <div class="categories__list-wrap swiper">
+                  <ul class="categories__type-list swiper-wrapper">
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Облачный кондиционер</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Услуги Daichi</div>
+                    </li>
+                    <li class="categories__type swiper-slide">
+                      <div class="categories__type-btn">Системы VRF/VRV</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="categories__toggle-btn btn-arrow">
+              <span>Показать все</span>
+              <span>Свернуть</span>
+              <svg><use xlink:href="img/sprite.svg#arrow"></use></svg>
+            </button>
+          </div>
+
+          <div class="education-events__events-list events">
+            <ul class="events__date-list">
+              <li class="events__date-item">
+                <h3 class="events__date-title">18 февраля, пятница</h3>
+                <ul class="events__list">
+                  <li class="events__item">
+                    <div class="events__card" data-trigger="modal-event">
+                      <div class="events__card-info">
+                        <span class="events__card-time">14:00</span>
+                        <ul class="events__card-audience-list">
+                          <li class="events__card-audience-item">Для дилеров</li>
+                          <li class="events__card-audience-item">Для проектировщиков</li>
+                          <li class="events__card-audience-item">Для технических специалистов</li>
+                        </ul>
+                      </div>
+                      <div class="events__card-subject">
+                        <h4 class="events__card-title">VRV/VRF системы</h4>
+                        <div class="events__card-person-block">
+                          <div class="events__card-person">
+                            <div class="events__card-person-img-block">
+                              <img src="img/person-1.jpg" alt="person-1" class="events__card-person-img" />
+                            </div>
+                            <div class="events__card-person-info">
+                              <div class="events__card-person-name">Иван Иванов</div>
+                              <div class="events__card-person-role">
+                                Глава департамента технического развития Daichi
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="events__card-tags">
+                          <li class="events__card-tag">Kentatsu</li>
+                          <li class="events__card-tag">Daikin</li>
+                          <li class="events__card-tag">Midea</li>
+                          <li class="events__card-tag">Bosch</li>
+                          <li class="events__card-tag">Системы VRV/VRF</li>
+                          <li class="events__card-tag">Для дилеров</li>
+                          <li class="events__card-tag">Для проектировщиков</li>
+                          <li class="events__card-tag">Для технических специалистов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="events__item">
+                    <div class="events__card">
+                      <div class="events__card-info">
+                        <span class="events__card-time">18:00</span>
+                        <ul class="events__card-audience-list">
+                          <li class="events__card-audience-item">Для дилеров</li>
+                        </ul>
+                      </div>
+                      <div class="events__card-subject">
+                        <h4 class="events__card-title">Как продавать воздух за деньги?</h4>
+                        <div class="events__card-person-block">
+                          <div class="events__card-person">
+                            <div class="events__card-person-img-block">
+                              <img src="img/person-2.jpg" alt="person-2" class="events__card-person-img" />
+                            </div>
+                            <div class="events__card-person-info">
+                              <div class="events__card-person-name">Семён Семёнов</div>
+                              <div class="events__card-person-role">Антрепрёнер, миллионер</div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="events__card-tags">
+                          <li class="events__card-tag">Daikin</li>
+                          <li class="events__card-tag">Kentatsu</li>
+                          <li class="events__card-tag">Daichi</li>
+                          <li class="events__card-tag">Облачный кондиционер</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="events__date-item">
+                <h3 class="events__date-title">21 февраля, понедельник</h3>
+                <ul class="events__list">
+                  <li class="events__item">
+                    <div class="events__card">
+                      <div class="events__card-info">
+                        <span class="events__card-time">10:00</span>
+                        <ul class="events__card-audience-list">
+                          <li class="events__card-audience-item">Для проектировщиков</li>
+                        </ul>
+                      </div>
+                      <div class="events__card-subject">
+                        <h4 class="events__card-title">
+                          На всякого Егорку найдётся своя поговорка. Продаём услуги Daichi.
+                        </h4>
+                        <div class="events__card-person-block">
+                          <div class="events__card-person">
+                            <div class="events__card-person-img-block">
+                              <img src="img/person-3.jpg" alt="person-3" class="events__card-person-img" />
+                            </div>
+                            <div class="events__card-person-info">
+                              <div class="events__card-person-name">Константин Константинов</div>
+                              <div class="events__card-person-role">Человек, который умеет продать ручку</div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="events__card-tags">
+                          <li class="events__card-tag">Daichi</li>
+                          <li class="events__card-tag">Климат Онлайн</li>
+                          <li class="events__card-tag">Мобильное управление</li>
+                          <li class="events__card-tag">Мой комфорт</li>
+                          <li class="events__card-tag">Услуги Daichi</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="events__date-item">
+                <h3 class="events__date-title">28 февраля, понедельник</h3>
+                <ul class="events__list">
+                  <li class="events__item">
+                    <div class="events__card">
+                      <div class="events__card-info">
+                        <span class="events__card-time">18:00</span>
+                        <ul class="events__card-audience-list">
+                          <li class="events__card-audience-item">Для дилеров</li>
+                        </ul>
+                      </div>
+                      <div class="events__card-subject">
+                        <h4 class="events__card-title">
+                          Он был в шоке, когда увидел ЭТО. Как не облажаться при монтаже.
+                        </h4>
+                        <div class="events__card-person-block">
+                          <div class="events__card-person">
+                            <div class="events__card-person-img-block">
+                              <img src="img/person-4.jpg" alt="person-3" class="events__card-person-img" />
+                            </div>
+                            <div class="events__card-person-info">
+                              <div class="events__card-person-name">Семён Семёнов</div>
+                              <div class="events__card-person-role">Антрепрёнер, миллионер</div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="events__card-tags">
+                          <li class="events__card-tag">Для монтажников</li>
+                          <li class="events__card-tag">Kentatsu</li>
+                          <li class="events__card-tag">Daichi</li>
+                          <li class="events__card-tag">Midea</li>
+                          <li class="events__card-tag">Axioma</li>
+                          <li class="events__card-tag">Primera</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button class="education-events__show-all btn-large">Показать все события</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education-contact-us">
+      <div class="education-contact-us__container container">
+        <div class="education-contact-us__content">
+          <div class="education-contact-us__desc-block">
+            <h2 class="education-contact-us__title section-title">Свяжитесь с&nbsp;нами!</h2>
+            <p class="education-contact-us__desc">
+              Если у вас есть вопросы о программах обучения или вы не знаете, какой курс подойдёт вам, оставьте свой
+              номер&nbsp;— мы ответим на все ваши вопросы
+            </p>
+          </div>
+          <div class="education-contact-us__form-block">
+            <form action="">
+              <div class="education-contact-us__form-inner">
+                <div class="field">
+                  <span class="wrap-field-input">
+                    <label for="">Ваш вопрос</label>
+                    <textarea class="field-input-textarea" placeholder="Начните печатать ваш вопрос..."></textarea>
+                  </span>
+                </div>
+                <div class="education-contact-us__bottom">
+                  <button class="education-contact-us__send button">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="event-modal" class="modal modal-event js-show" data-modal="modal-event">
+      <div class="modal__overlay">
+        <div class="modal-event__body modal__body">
+          <form>
+            <div class="modal__top-bar modal-event__top-bar">
+              <span class="modal-event__date">18 февраля, 14:00</span>
+              <button type="button" class="modal-event__close-btn modal__close-btn">
+                <svg><use xlink:href="img/sprite.svg#close"></use></svg>
+              </button>
+            </div>
+            <h1 class="modal-event__title modal__title">
+              VRF системы от Daikin. Как спроектировать самый классный проект в&nbsp;истории современной России
+            </h1>
+            <p class="modal__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget dictum tellus. Maecenas gravida id
+              urna at iaculis. Duis mattis nunc quis tellus eleifend, eget ultrices urna ultrices. Sed et cursus velit.
+            </p>
+            <a href="#" class="modal-event__about button-light"> Подробнее о курсе </a>
+            <div class="modal-event__tags">
+              <h3 class="modal-event__tags-title">Направления</h3>
+              <ul class="modal-event__tags-list">
+                <li class="modal-event__tags-item">Системы VRF</li>
+                <li class="modal-event__tags-item">Для проектировщиков</li>
+                <li class="modal-event__tags-item">Daikin</li>
+              </ul>
+            </div>
+            <div class="modal-event__bottom">
+              <span class="modal-event__bottom-text">
+                Нажмите кнопку, чтобы зарегистрироваться на событие и подписаться на программу обучения
+              </span>
+              <a href="#" class="modal-event__bottom-btn button">Отслеживать</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="up-btn">
+      <a class="up-btn__link js-up-btn" href="#">Наверх</a>
+    </div>
+    <div class="wrap-footer">
+      <div class="footer">
+        <div class="footer-row">
+          <div class="footer-col footer-col_logo">
+            <div class="footer-logo">
+              <a href="#"> <img src="../images/logo.svg" /></a>
+            </div>
+          </div>
+          <div class="footer-col footer-col_nav">
+            <div class="footer-nav-row">
+              <div class="footer-nav-col">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item footer-nav__item_h">КОНДИЦИОНИРОВАНИЕ</li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Настенные сплит-системы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Мультисплит-системы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Кассетные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Канальные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Напольно-потолочные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Колонные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Оконные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Мобильные кондиционеры</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Аксессуары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-nav-col">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item footer-nav__item_h">Вентиляция</li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Воздухоочистители</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Компактные вентиляционные установки</a>
+                  </li>
+                </ul>
+                <ul class="footer-nav">
+                  <li class="footer-nav__item footer-nav__item_h">ОТОПЛЕНИЕ</li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Чугунные твердотопливные</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Напольные газовые конденсационные</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Чугунные газовые</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Стальные твердотопливные</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Настенные газовые конденсационные</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Настенные газовые</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Конвекторы</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Аксессуары</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-nav-col">
+                <ul class="footer-nav">
+                  <li class="footer-nav__item footer-nav__item_act">
+                    <a class="footer-nav__link" href="#">Акции</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Новости</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Обучение и семинары</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">О «Даичи»</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-col">
+            <span class="footer-phone"
+              ><span class="ico-phone">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-phone"></use></svg></span
+              ><a href="tel:+78001200070">8 800 120-00-70</a><a href="tel:+74954333245">8 495 433-32-45</a></span
+            ><span class="footer-mail"
+              ><span class="ico-mail">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-mail"></use></svg></span
+              ><a href="mailto:info@daichi.ru">info@daichi.ru</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-footer-bottom">
+      <div class="footer-bottom">
+        <div class="footer-bottom-col footer-copyright">
+          © Daichi 2020. Все права защищены.<br />Разработка сайта:
+          <a href="#">Sebekon</a>
+        </div>
+        <div class="footer-bottom-col footer-policy">
+          <a href="#"
+            >Политика об обработке <br />
+            и защите персональных данных</a
+          >
+        </div>
+        <div class="footer-bottom-col footer-addres">
+          г.Москва, Огородный проезд,<br />
+          дом 20, строение 3
+        </div>
+        <div class="footer-bottom-col footer-social">
+          <div class="social-pane">
+            <a href="#"
+              ><span class="ico-social ico-social__fb">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-fb"></use></svg></span></a
+            ><a href="#"
+              ><span class="ico-social ico-social__inst">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-inst"></use></svg></span></a
+            ><a href="#"
+              ><span class="ico-social ico-social__vk">
+                <svg class="ico-svg">
+                  <use xlink:href="#ico-vk"></use></svg></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
