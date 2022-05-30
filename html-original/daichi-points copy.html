@@ -1440,7 +1440,7 @@
       </section>
 
       <!--Модальное окно регистрации покупки-->
-      <section id="register" class="modal">
+      <section id="register-1" class="modal">
         <div class="modal__overlay">
           <div class="modal__body">
             <button class="modal__close-button">
@@ -1483,6 +1483,45 @@
               </div>
               <div class="modal__btn-block">
                 <button type="submit" class="modal__btn-item btn-primary" disabled>Далее</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Модальное окно регистрации покупки-->
+      <section id="register-2" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__body">
+            <button class="modal__close-button">
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+
+            <form>
+              <h1 class="modal__title">Зарегистрировать покупку</h1>
+              <div class="modal__content">
+                <div class="device-choose-item">
+                  <div class="device-choose-item__img-block">
+                    <img src="img/wifi-controller.png" alt="wifi-контроллер">
+                  </div>
+                  <div class="device-choose-item__info">
+                    <p class="device-choose-item__points">
+                      <span>500 баллов ожидают начисления</span>
+                    </p>
+                    <p class="device-choose-item__title">
+                      Спасибо! Вы успешно зарегистрировали Wi-Fi контроллер Daichi DW21-B с серийным номером Daichi123456
+                    </p>
+                    <p class="device-choose-item__desc">
+                      500 баллов будут начислены сразу после добавления устройства в приложении Daichi Comfort. Вы всегда можете отследить статус начисления баллов на странице “Мои начисления” в своём личном кабинете
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__btn-block">
+                <button type="submit" class="modal__btn-item btn-secondary">Зарегистрировать ещё</button>
+                <button type="submit" class="modal__btn-item btn-primary">Перейти к моим начислениям</button>
               </div>
             </form>
           </div>
