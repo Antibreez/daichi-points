@@ -61,6 +61,33 @@
       padding-top: 8px;
     }
   }
+
+  &.main {
+    padding: 4px 6px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(243, 115, 53, 0.5);
+
+    svg {
+      width: 20px;
+      height: 12px;
+    }
+
+    .logo {
+      margin-right: 6px;
+
+      &::after {
+        width: 1px;
+        height: 12px;
+        margin-left: 6px;
+      }
+    }
+
+    .value {
+      font-size: 16px;
+      line-height: 13px;
+      padding-top: 3px;
+    }
+  }
 }
 
 @include mobile {

@@ -8,9 +8,10 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.6",
     "babel-loader": "8.2.3",
-    "browser-sync": "2.27.9",
+    "browser-sync": "^2.27.10",
     "chalk": "4.1.2",
     "del": "6.0.0",
+    "es5-ext": "0.10.53",
     "fs": "0.0.1-security",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "8.0.0",
@@ -36,8 +37,7 @@
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.7",
     "webpack": "5.62.1",
-    "webpack-stream": "7.0.0",
-    "es5-ext": "0.10.53"
+    "webpack-stream": "7.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -64,6 +64,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
+    "browser-sync-client": "^2.27.10",
     "gh-pages": "3.2.3",
     "jquery": "3.6.0",
     "jquery-ui-dist": "^1.13.1",

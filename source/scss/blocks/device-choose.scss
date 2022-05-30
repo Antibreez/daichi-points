@@ -50,3 +50,98 @@
     }
   }
 }
+
+.device-choose-item {
+  display: flex;
+  margin: 0 0 57px;
+}
+
+.device-choose-item__img-block {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  width: 200px;
+  height: 200px;
+}
+
+.device-choose-item__points {
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px;
+
+  span {
+    @include font(15px, 23px, 400, $text-minor);
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 36px;
+    background-image: url("../img/d-chip-grey.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 24px;
+  }
+}
+
+.device-choose-item__title {
+  @include font(16px, 19px, 500, $text-main);
+  margin: 0 0 8px;
+}
+
+.device-choose-item__desc {
+  @include font(15px, 23px, 400, $text-minor);
+  margin: 0;
+}
+
+@include mobile {
+  .device-choose {
+    flex-direction: column;
+
+    label {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0 0 8px;
+      }
+    }
+  }
+
+  .device-choose-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .device-choose-item__img-block {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 130px;
+      height: 36px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-image: url("../img/d-chip-grey.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: translateX(-50%);
+      margin: 0 0 16px;
+    }
+  }
+
+  .device-choose-item__points {
+    justify-content: center;
+
+    &::before {
+      display: none;
+    }
+  }
+}
