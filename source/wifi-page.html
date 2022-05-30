@@ -36,7 +36,7 @@
     <title>Учебный центр</title>
   </head>
   <body>
-    <script type="text/template" id="popup-template-general">
+    <!-- <script type="text/template" id="popup-template-general">
 
       <div class="wrap-popup-pane popups-plugin">
       	<div class="popup-pane">
@@ -48,7 +48,7 @@
       		</div>
       	</div>
       </div>
-    </script>
+    </script> -->
 
     <script type="text/template" id="popup-manager-contact"></script>
 
@@ -71,13 +71,13 @@
 
               </div>
               <div class="popup-pane__footer">
-                  <a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a>
+                  <!-- <a class="btn" onclick = 'BX.onCustomEvent("CPopupFnOk", [{{{uniqId}}}]);' href="javascript:void(0);">{{{btnOkTitle}}}</a> -->
               </div>
           </div>
       </div>
     </script>
 
-    <script type="text/template" id="popup-template-yes-no-question">
+    <!-- <script type="text/template" id="popup-template-yes-no-question">
 
       <div class="wrap-popup-pane popups-plugin">
           <div class="popup-pane">
@@ -90,7 +90,7 @@
               </div>
           </div>
       </div>
-    </script>
+    </script> -->
     <div id="panel"></div>
     <div class="wrap">
       <header class="wrap-header">
@@ -564,6 +564,273 @@
               <div class="product-card__amount">
                 <a href="/personal/register/">Получить условия</a>
               </div>
+
+              <div class="product-card__actions">
+                <div class="product-card__points">
+                  <div class="product-card__points-label"></div>
+                  <p class="product-card__points-title">+500 °D баллов при покупке!</p>
+                  <p class="product-card__points-desc">Получайте °D баллы при покупке мобильного управления.</p>
+                  <a href="#">Подробнее об акции</a>
+                </div>
+                <div class="product-card__compatibility">
+                  <div class="product-card__compatibility-label"></div>
+                  <p class="product-card__compatibility-title">+500 °D баллов при покупке!</p>
+                  <p class="product-card__compatibility-desc">Получайте °D баллы при покупке мобильного управления.</p>
+                  <a href="#">Проверить</a>
+                </div>
+              </div>
+
+              <!--Модальное окно подходящего переходника-->
+              <section id="get-wire" class="modal">
+                <div class="modal__overlay">
+                  <div class="modal__body">
+                    <button class="modal__close-button">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#close"></use>
+                      </svg>
+                    </button>
+
+                    <form>
+                      <h1 class="modal__title">Подберите подходящий переходник!</h1>
+                      <div class="modal__content">
+                        <p class="modal__text">
+                          В комплектацию контроллера DW22-B не входит переходник кондиционера. Его необходимо приобрести
+                          отдельно. Укажите модель вашего кондицонера, чтобы подобрать подходящий переходник.
+                        </p>
+                        <div class="modal__search">
+                          <div class="search-pane">
+                            <div class="wrap-search-pane-input">
+                              <input
+                                class="search-pane-input"
+                                id="get-wire-search"
+                                autocomplete="off"
+                                name="q"
+                                value=""
+                                type="text"
+                                placeholder="Укажите модель кондиционера" />
+                              <button type="submit" name="s" class="search-pane-btn">
+                                <span class="ico-search">
+                                  <svg class="ico-svg">
+                                    <use xlink:href="#ico-search"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="reset" class="search-pane-btn search-pane-btn_clear">
+                                <svg class="ico-svg">
+                                  <use xlink:href="#ico-close"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal__search-result">
+                          <div class="modal__controller-desc">
+                            Для модели Daikin FTXM FTXJ25MS/RXJ25N подходит переходник Daichi DCCOM DCCOMDA12. Добавьте
+                            товар в корзину, не забыв указать желаемое количество. После добавления закройте модальное
+                            окно или нажмите кнопку “Перейти в корзину”.
+                          </div>
+                          <div class="modal__search-result-list">
+                            <div class="modal__search-result-row">
+                              <div class="modal__search-result-item">
+                                <div class="modal__search-result-img-block">
+                                  <img src="img/wire.png" alt="wire" />
+                                </div>
+                                <div class="modal__search-result-subtitle">Наименование</div>
+                                <div class="modal__search-result-info">
+                                  <span class="name">Wi-Fi контроллер Daichi DW22-B</span>
+                                  <!-- <span class="points">+500 °D баллов</span> -->
+                                </div>
+                                <div class="modal__search-result-subtitle">Цена</div>
+                                <div class="modal__search-result-price">5 500 ₽</div>
+
+                                <div class="amount" data-available-qnt="23" data-product-id="16227" data-qnt-selector>
+                                  <div class="amount__body">
+                                    <button
+                                      class="amount-btn amount-btn_reduce js-amount-btn_reduce js-amount-btn"
+                                      data-type="reduce"
+                                      type="button">
+                                      ‐
+                                    </button>
+                                    <span class="wrap-amount-input">
+                                      <input class="amount-input js-amount-input" type="text" value="0" readonly />
+                                    </span>
+                                    <button
+                                      class="amount-btn amount-btn_increase js-amount-btn_increase js-amount-btn"
+                                      data-type="increase"
+                                      type="button">
+                                      +
+                                    </button>
+                                  </div>
+                                  <div class="amount__btn js-amount-init-btn">
+                                    <button class="amount-buy-btn js-amount-buy-btn">
+                                      <span class="ico-amount-cart">
+                                        <svg class="ico-svg">
+                                          <use xlink:href="#ico-cart"></use>
+                                        </svg>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal__btn-block">
+                        <button type="button" class="modal__btn-item modal__close btn-secondary">Закрыть</button>
+                        <button type="button" class="modal__btn-item btn-primary" disabled>Перейти в корзину</butt>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
+
+              <!--Модальное окно проверки совместимости-->
+              <section id="compatibility" class="modal js-show">
+                <div class="modal__overlay">
+                  <div class="modal__body">
+                    <button class="modal__close-button">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#close"></use>
+                      </svg>
+                    </button>
+
+                    <form>
+                      <h1 class="modal__title">Проверьте совместимость!</h1>
+                      <div class="modal__content">
+                        <p class="modal__text">
+                          Укажите модель вашего кондиционера, чтобы проверить его совместимость с Wi-Fi контроллером Daichi DW22-B
+                        </p>
+                        <div class="modal__search">
+                          <div class="search-pane">
+                            <div class="wrap-search-pane-input">
+                              <input
+                                class="search-pane-input"
+                                id="get-wire-search"
+                                autocomplete="off"
+                                name="q"
+                                value=""
+                                type="text"
+                                placeholder="Укажите модель кондиционера" />
+                              <button type="submit" name="s" class="search-pane-btn">
+                                <span class="ico-search">
+                                  <svg class="ico-svg">
+                                    <use xlink:href="#ico-search"></use>
+                                  </svg>
+                                </span>
+                              </button>
+                              <button type="reset" class="search-pane-btn search-pane-btn_clear">
+                                <svg class="ico-svg">
+                                  <use xlink:href="#ico-close"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal__search-result">
+                          <div class="modal__controller-desc">
+                            Daikin FTXM FTXJ25MS/RXJ25N совместим с Wi-Fi контроллером Daichi DW22-B.<br>
+                            Вы можете добавить товар в корзину прямо из этого окна.
+                            <p class="alert-text">Также не забудьте добавить переходник, подходящий для модели Daikin FTXM FTXJ25MS/RXJ25N.</p>
+                          </div>
+                          <div class="modal__search-result-list">
+                            <div class="modal__search-result-row">
+                              <div class="modal__search-result-item">
+                                <div class="modal__search-result-img-block">
+                                  <img src="img/wifi-controller.png" alt="wifi-контроллер" />
+                                </div>
+                                <div class="modal__search-result-subtitle">Наименование</div>
+                                <div class="modal__search-result-info">
+                                  <span class="name">Wi-Fi контроллер Daichi DW22-B</span>
+                                  <span class="points">+500 °D баллов</span>
+                                </div>
+                                <div class="modal__search-result-subtitle">Цена</div>
+                                <div class="modal__search-result-price">5 500 ₽</div>
+
+                                <div class="amount" data-available-qnt="23" data-product-id="16227" data-qnt-selector>
+                                  <div class="amount__body">
+                                    <button
+                                      class="amount-btn amount-btn_reduce js-amount-btn_reduce js-amount-btn"
+                                      data-type="reduce"
+                                      type="button">
+                                      ‐
+                                    </button>
+                                    <span class="wrap-amount-input">
+                                      <input class="amount-input js-amount-input" type="text" value="0" readonly />
+                                    </span>
+                                    <button
+                                      class="amount-btn amount-btn_increase js-amount-btn_increase js-amount-btn"
+                                      data-type="increase"
+                                      type="button">
+                                      +
+                                    </button>
+                                  </div>
+                                  <div class="amount__btn js-amount-init-btn">
+                                    <button class="amount-buy-btn js-amount-buy-btn">
+                                      <span class="ico-amount-cart">
+                                        <svg class="ico-svg">
+                                          <use xlink:href="#ico-cart"></use>
+                                        </svg>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal__search-result-row">
+                              <div class="modal__search-result-item">
+                                <div class="modal__search-result-img-block">
+                                  <img src="img/wire.png" alt="wire" />
+                                </div>
+                                <div class="modal__search-result-subtitle">Наименование</div>
+                                <div class="modal__search-result-info">
+                                  <span class="name">Daichi DCCOM DCCOMDA12</span>
+                                  <!-- <span class="points">+500 °D баллов</span> -->
+                                </div>
+                                <div class="modal__search-result-subtitle">Цена</div>
+                                <div class="modal__search-result-price">550 ₽</div>
+
+                                <div class="amount" data-available-qnt="23" data-product-id="16227" data-qnt-selector>
+                                  <div class="amount__body">
+                                    <button
+                                      class="amount-btn amount-btn_reduce js-amount-btn_reduce js-amount-btn"
+                                      data-type="reduce"
+                                      type="button">
+                                      ‐
+                                    </button>
+                                    <span class="wrap-amount-input">
+                                      <input class="amount-input js-amount-input" type="text" value="0" readonly />
+                                    </span>
+                                    <button
+                                      class="amount-btn amount-btn_increase js-amount-btn_increase js-amount-btn"
+                                      data-type="increase"
+                                      type="button">
+                                      +
+                                    </button>
+                                  </div>
+                                  <div class="amount__btn js-amount-init-btn">
+                                    <button class="amount-buy-btn js-amount-buy-btn">
+                                      <span class="ico-amount-cart">
+                                        <svg class="ico-svg">
+                                          <use xlink:href="#ico-cart"></use>
+                                        </svg>
+                                      </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal__btn-block">
+                        <button type="button" class="modal__btn-item modal__close btn-secondary">Закрыть</button>
+                        <button type="button" class="modal__btn-item btn-primary" disabled>Перейти в корзину</butt>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
           <div class="product-card__description">
@@ -861,6 +1128,9 @@
         </div>
       </div>
     </div>
+
+    <script src="js/main.min.js"></script>
+
     <div class="svg-sprite">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol viewBox="0 0 18 21" fill="none" id="ico-account" xmlns="http://www.w3.org/2000/svg">
@@ -1215,7 +1485,7 @@
         </symbol>
       </svg>
     </div>
-    <script>
+    <!-- <script>
       BX.message({
         BASKET_STATE: {
           defaults: {
@@ -1227,7 +1497,7 @@
           items: [],
         },
       });
-    </script>
+    </script> -->
     <script>
       var skJSData = [];
     </script>
