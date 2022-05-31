@@ -1,3 +1,7 @@
+a:hover {
+  cursor: pointer;
+}
+
 .header-bottom.header-bottom--education {
   position: relative;
   top: auto;
@@ -69,6 +73,14 @@ div.up-btn {
   .points {
     display: flex;
     align-items: center;
+
+    &:hover {
+      .points-text {
+        span:first-child {
+          color: #2858ff;
+        }
+      }
+    }
   }
 
   .d-points-chip {
@@ -87,6 +99,16 @@ div.up-btn {
 
   .points-value {
     @include font(12px, 16px, 400, $text-minor);
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  a.exit {
+    color: #fc4242;
   }
 }
 
@@ -244,6 +266,14 @@ div.up-btn {
 .cart-page-side__promo {
   .product-card__points {
     width: 100%;
+  }
+}
+
+.cart-list-item__title {
+  .points {
+    display: block;
+    @include font(16px, 24px, 400, #94a0b1);
+    margin-top: 2px;
   }
 }
 
