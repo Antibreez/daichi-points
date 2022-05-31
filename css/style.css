@@ -8865,13 +8865,12 @@ p.reports__status.active {
   line-height: 21px;
   font-weight: 400;
   color: #fc4242;
-  margin: 8px 0 0;
   position: absolute;
-  bottom: 0;
+  top: calc(100% - 42px);
   left: 0; }
 
 .input-block.points.error {
-  padding-bottom: 29px; }
+  padding-bottom: 50px; }
   .input-block.points.error input {
     border-color: #fc4242;
     color: #fc4242; }
