@@ -80,14 +80,13 @@
   .spend-points__error-message {
     display: none;
     @include font(14px, 21px, 400, #fc4242);
-    margin: 8px 0 0;
     position: absolute;
-    bottom: 0;
+    top: calc(100% - 42px);
     left: 0;
   }
 
   &.error {
-    padding-bottom: 29px;
+    padding-bottom: 50px;
 
     input {
       border-color: #fc4242;
