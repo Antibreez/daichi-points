@@ -3737,6 +3737,9 @@ a.ui-button:active,
   .about-program__questions {
     padding: 18px; } }
 
+a:hover {
+  cursor: pointer; }
+
 .header-bottom.header-bottom--education {
   position: relative;
   top: auto;
@@ -3806,6 +3809,8 @@ div.up-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .dropdown-menu-list .points:hover .points-text span:first-child {
+    color: #2858ff; }
 
 .dropdown-menu-list .d-points-chip {
   -ms-flex-negative: 0;
@@ -3826,6 +3831,12 @@ div.up-btn {
   line-height: 16px;
   font-weight: 400;
   color: #6c7684; }
+
+.dropdown-menu-list li:not(:last-child) {
+  margin-bottom: 12px; }
+
+.dropdown-menu-list a.exit {
+  color: #fc4242; }
 
 .dropdown-menu-dropdown_personal {
   max-width: 300px; }
@@ -3968,6 +3979,14 @@ div.up-btn {
 
 .cart-page-side__promo .product-card__points {
   width: 100%; }
+
+.cart-list-item__title .points {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #94a0b1;
+  margin-top: 2px; }
 
 @media (max-width: 767px) {
   .product-card__actions {
