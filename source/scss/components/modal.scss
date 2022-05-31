@@ -424,6 +424,12 @@
   &:last-child {
     padding-bottom: 0;
   }
+
+  &.or {
+    padding: 12px 0;
+    @include font(16px, 24px, 400, $text-main);
+    text-align: center;
+  }
 }
 
 .modal__search-result-item {
@@ -562,6 +568,10 @@
 
     &:nth-child(n) {
       padding-bottom: 0;
+    }
+
+    &.or {
+      padding: 0;
     }
   }
 
