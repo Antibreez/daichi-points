@@ -18,6 +18,10 @@
     flex-shrink: 0;
     margin-right: 24px;
   }
+
+  .d-points-chip.main {
+    margin-right: 24px;
+  }
 }
 
 .my-points__main-register {
@@ -143,6 +147,10 @@
     padding: 24px;
 
     img {
+      margin: 0 0 24px;
+    }
+
+    .d-points-chip.main {
       margin: 0 0 24px;
     }
   }
