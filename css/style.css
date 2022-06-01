@@ -7771,6 +7771,8 @@ button.contracts__page-number:not(.active):focus {
     height: 24px;
     flex-shrink: 0;
     margin-right: 24px; }
+  .my-points__main-points .d-points-chip.main {
+    margin-right: 24px; }
 
 .my-points__main-register {
   width: calc((100% - 24px) / 2);
@@ -7881,6 +7883,8 @@ button.contracts__page-number:not(.active):focus {
             align-items: flex-start;
     padding: 24px; }
     .my-points__main-points img {
+      margin: 0 0 24px; }
+    .my-points__main-points .d-points-chip.main {
       margin: 0 0 24px; }
   .my-points__main-points-list {
     -webkit-box-orient: vertical;
