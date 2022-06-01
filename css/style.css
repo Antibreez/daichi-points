@@ -3841,11 +3841,64 @@ div.up-btn {
 .dropdown-menu-dropdown_personal {
   max-width: 300px; }
 
-.catalog-grid-item-chip {
+.catalog-grid-item-chip-block {
   position: absolute;
   top: 16px;
   left: 16px;
   z-index: 10; }
+  .catalog-grid-item-chip-block .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    display: none;
+    width: 250px;
+    padding: 16px;
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -10px);
+        -ms-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px); }
+    .catalog-grid-item-chip-block .tooltip:hover {
+      display: block; }
+    .catalog-grid-item-chip-block .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 22px;
+      height: 6px;
+      background-image: url("../img/tooltip-corner.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-transform: translateX(calc(-50% - 5px)) rotate(180deg);
+          -ms-transform: translateX(calc(-50% - 5px)) rotate(180deg);
+              transform: translateX(calc(-50% - 5px)) rotate(180deg); }
+    .catalog-grid-item-chip-block .tooltip::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 10px; }
+  .catalog-grid-item-chip-block .tooltip__title {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 8px; }
+  .catalog-grid-item-chip-block .tooltip__desc {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #1a1a1a;
+    margin: 0 0 8px; }
+  @media (min-width: 768px) {
+    .catalog-grid-item-chip-block:hover .tooltip {
+      display: block; } }
 
 .amount.points .amount-d-points {
   position: absolute;
@@ -8282,7 +8335,12 @@ button.contracts__page-number:not(.active):focus {
 .reason-card__chip {
   position: absolute;
   top: 12px;
-  right: 12px; }
+  right: 12px;
+  width: 93px;
+  height: 24px; }
+  .reason-card__chip img {
+    width: 93px;
+    height: 24px; }
 
 @media (max-width: 767px) {
   .reason-card {
