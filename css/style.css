@@ -8668,6 +8668,8 @@ p.reports__status.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8680,7 +8682,19 @@ p.reports__status.active {
   top: 0;
   left: 0;
   z-index: 2;
-  padding-top: 4px; }
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 5px;
+  overflow: hidden; }
+  .spend-points__bar-current::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 28px; }
+
+.spend-points__bar-current-text {
+  display: inline-block;
+  white-space: nowrap; }
 
 .spend-points__bar-limit {
   height: 100%;
