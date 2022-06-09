@@ -1247,13 +1247,13 @@
 
                     <div class="spend-points">
                       <div class="spend-points__bar" data-total="2000">
-                        <div class="spend-points__bar-current" style="width: 32%;">
+                        <div class="spend-points__bar-current" style="width: 0%;">
                           <span class="spend-points__bar-current-text">
-                            <span>900</span>
+                            <span>0</span>
                             °D баллов
                           </span>
                         </div>
-                        <div class="spend-points__bar-limit" style="width: 64%;"></div>
+                        <div class="spend-points__bar-limit" style="width: 75%;"></div>
                       </div>
 
                       <div class="spend-points__info">
@@ -1277,7 +1277,7 @@
                         </div>
                         <div class="spend-points__info-part">
                           <p class="spend-points__info-points">
-                            <span id="spend-points-current">900</span>
+                            <span id="spend-points-current">0</span>
                             °D баллов
                           </p>
                           <p class="spend-points__info-label">Собираетесь потратить</p>
@@ -1292,7 +1292,7 @@
                     </p>
 
                     <div class="input-block points">
-                      <input class="input-text" type="text" name="points-amount" />
+                      <input class="input-text" type="text" name="points-amount" value="0"/>
                       <p class="spend-points__error-message">
                         Вы не можете потратить указанное количество баллов
                       </p>
@@ -1303,10 +1303,10 @@
 
                   <div class="spend-points__bottom-block">
                     <div class="spend-points__balance">
-                      После списания останется<br> 1100 °D баллов
+                      После списания останется<br> <span>1100</spa> °D баллов
                     </div>
                     <div class="modal__btn-block">
-                      <button type="submit" class="modal__btn-item btn-primary">
+                      <button type="submit" class="modal__btn-item btn-primary" disabled>
                         Потратить °D баллы
                       </button>
                     </div>

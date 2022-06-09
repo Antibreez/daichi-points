@@ -8683,8 +8683,6 @@ p.reports__status.active {
   left: 0;
   z-index: 2;
   padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 5px;
   overflow: hidden; }
   .spend-points__bar-current::before {
     content: "";
@@ -8694,7 +8692,9 @@ p.reports__status.active {
 
 .spend-points__bar-current-text {
   display: inline-block;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-left: 4px;
+  margin-right: 5px; }
 
 .spend-points__bar-limit {
   height: 100%;
