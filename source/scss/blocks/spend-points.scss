@@ -144,9 +144,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
+  background-color: #fff;
 
   .modal__btn-block {
     width: auto;
+    margin-top: 0;
   }
 }
 
