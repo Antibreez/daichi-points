@@ -8794,9 +8794,11 @@ p.reports__status.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 12px; }
+  padding-top: 12px;
+  background-color: #fff; }
   .spend-points__bottom-block .modal__btn-block {
-    width: auto; }
+    width: auto;
+    margin-top: 0; }
 
 .spend-points__balance {
   font-size: 14px;
