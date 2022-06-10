@@ -59,12 +59,20 @@ $(window).on("load", function () {
   $input.on("input", changeInput);
 
   $plusBtn.on("click", function () {
+    if (isNaN(+$input.val())) {
+      $input.val(0);
+    }
+
     $input.val(`${+$input.val() + 1}`);
 
     changeInput();
   });
 
   $minusBtn.on("click", function () {
+    if (isNaN(+$input.val())) {
+      $input.val(1);
+    }
+
     if (+$input.val() - 1 < 0) {
       $input.val(0);
     } else {
