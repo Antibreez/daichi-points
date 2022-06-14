@@ -1,20 +1,20 @@
 $(window).on("load", function () {
-  const $totalPointsBar = $(".spend-points__bar");
-  const $currentPointsBar = $(".spend-points__bar-current");
-  const $currentPointsBarText = $(".spend-points__bar-current-text span");
-  const $limitPoinsBar = $(".spend-points__bar-limit");
+  let $totalPointsBar = $(".spend-points__bar");
+  let $currentPointsBar = $(".spend-points__bar-current");
+  let $currentPointsBarText = $(".spend-points__bar-current-text span");
+  let $limitPoinsBar = $(".spend-points__bar-limit");
 
-  const $currentPoints = $("#spend-points-current");
-  const $totalPoints = $("#spend-points-total");
-  const $limitPoints = $("#spend-points-limit");
-  const $pointsLeft = $(".spend-points__balance span");
+  let $currentPoints = $("#spend-points-current");
+  let $totalPoints = $("#spend-points-total");
+  let $limitPoints = $("#spend-points-limit");
+  let $pointsLeft = $(".spend-points__balance span");
 
-  const $inputBlock = $(".input-block.points");
-  const $minusBtn = $(".spend-points__minus");
-  const $plusBtn = $(".spend-points__plus");
-  const $input = $('input[name="points-amount"]');
+  let $inputBlock = $(".input-block.points");
+  let $minusBtn = $(".spend-points__minus");
+  let $plusBtn = $(".spend-points__plus");
+  let $input = $('input[name="points-amount"]');
 
-  const $submitBtn = $('#spend-points button[type="submit"]');
+  let $submitBtn = $('#spend-points button[type="submit"]');
 
   const getCurrentBar = () => {
     return Math.ceil((+$input.val() / +$totalPoints.text()) * 1000) / 10;
@@ -25,7 +25,7 @@ $(window).on("load", function () {
   };
 
   const changeInput = () => {
-    if (!isNaN(+$input.val()) && +$input.val() > 0) {
+    if (!isNaN(+$input.val()) && +$input.val() >= 0) {
       if (+$input.val() <= +$limitPoints.text()) {
         $currentPointsBar.css("width", `${getCurrentBar()}%`);
         $currentPointsBarText.text($input.val());
@@ -33,7 +33,7 @@ $(window).on("load", function () {
         $inputBlock.removeClass("error");
         $submitBtn.removeAttr("disabled");
 
-        $pointsLeft.text(+$limitPoints.text() - +$currentPoints.text());
+        $pointsLeft.text(+$totalPoints.text() - +$currentPoints.text());
       } else {
         $currentPointsBar.css("width", `${getLimitBar()}%`);
         $currentPointsBarText.text($limitPoints.text());
@@ -50,7 +50,7 @@ $(window).on("load", function () {
       $currentPoints.text(0);
       $currentPointsBar.css("width", `0%`);
 
-      $pointsLeft.text(+$limitPoints.text() - +$currentPoints.text());
+      $pointsLeft.text(+$totalPoints.text() - +$currentPoints.text());
     }
   };
 
@@ -80,5 +80,27 @@ $(window).on("load", function () {
     }
 
     changeInput();
+  });
+
+  $(".product-card__points a").on("click", function () {
+    console.log("open");
+    $totalPointsBar = $(".spend-points__bar");
+    $currentPointsBar = $(".spend-points__bar-current");
+    $currentPointsBarText = $(".spend-points__bar-current-text span");
+    $limitPoinsBar = $(".spend-points__bar-limit");
+
+    $currentPoints = $("#spend-points-current");
+    $totalPoints = $("#spend-points-total");
+    $limitPoints = $("#spend-points-limit");
+    $pointsLeft = $(".spend-points__balance span");
+
+    $inputBlock = $(".input-block.points");
+    $minusBtn = $(".spend-points__minus");
+    $plusBtn = $(".spend-points__plus");
+    $input = $('input[name="points-amount"]');
+
+    $submitBtn = $('#spend-points button[type="submit"]');
+
+    console.log($totalPointsBar);
   });
 });
