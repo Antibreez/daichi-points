@@ -82,8 +82,7 @@ $(window).on("load", function () {
     changeInput();
   });
 
-  $(".product-card__points a").on("click", function () {
-    console.log("open");
+  $(document).on("click", function () {
     $totalPointsBar = $(".spend-points__bar");
     $currentPointsBar = $(".spend-points__bar-current");
     $currentPointsBarText = $(".spend-points__bar-current-text span");
@@ -100,7 +99,5 @@ $(window).on("load", function () {
     $input = $('input[name="points-amount"]');
 
     $submitBtn = $('#spend-points button[type="submit"]');
-
-    console.log($totalPointsBar);
   });
 });
