@@ -6104,6 +6104,30 @@ button.contracts__page-number:not(.active):focus {
       line-height: 20px;
       padding-top: 2px; } }
 
+.content.is--daichi-points {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: none; }
+  .content.is--daichi-points .wrap-breadcrumbs {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 40px;
+    margin: 10px auto 30px auto; }
+    @media (max-width: 767px) {
+      .content.is--daichi-points .wrap-breadcrumbs {
+        padding: 0 18px; } }
+  .content.is--daichi-points h1 {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 40px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 767px) {
+      .content.is--daichi-points h1 {
+        padding: 0 18px; } }
+
 .date-block {
   display: -webkit-box;
   display: -ms-flexbox;
