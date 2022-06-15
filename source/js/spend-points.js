@@ -84,6 +84,10 @@
 $(document).on("click", function () {
   const $pointsTrigger = $(".product-card__points a");
 
+  if ($pointsTrigger.length === 0) {
+    return;
+  }
+
   if ($pointsTrigger.attr("data-init")) {
     console.log("no");
     return;
