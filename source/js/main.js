@@ -19,3 +19,4 @@ import "./testing";
 import "./program-reasons";
 import "./points-questions";
 import "./spend-points";
+import "./slider-tooltip";
