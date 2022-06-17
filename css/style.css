@@ -4093,6 +4093,10 @@ div.up-btn {
   color: #94a0b1;
   margin-top: 2px; }
 
+.catalog-series-table__link {
+  max-width: 200px;
+  white-space: nowrap; }
+
 @media (max-width: 767px) {
   .product-card__actions {
     -webkit-box-orient: vertical;
