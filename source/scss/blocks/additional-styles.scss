@@ -397,6 +397,11 @@ div.up-btn {
   }
 }
 
+.catalog-series-table__link {
+  max-width: 200px;
+  white-space: nowrap;
+}
+
 @media (max-width: 767px) {
   .product-card__actions {
     flex-direction: column;
