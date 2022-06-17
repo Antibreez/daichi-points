@@ -220,6 +220,27 @@ div.up-btn {
       height: 15px;
     }
   }
+
+  .tooltip__title {
+    display: block;
+    @include font(16px, 22px, 500, $text-main);
+    margin: 0 0 8px;
+  }
+
+  .tooltip__desc {
+    @include font(14px, 21px, 400, $text-main);
+    margin: 0 0 8px;
+  }
+
+  .catalog-grid-item-chip-block {
+    &:hover {
+      @media (min-width: 768px) {
+        .tooltip {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .amount.points {
