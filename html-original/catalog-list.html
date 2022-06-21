@@ -36,7 +36,7 @@
     <title>Учебный центр</title>
   </head>
   <body>
-    <script type="text/template" id="popup-template-general">
+    <!-- <script type="text/template" id="popup-template-general">
 
       <div class="wrap-popup-pane popups-plugin">
       	<div class="popup-pane">
@@ -48,9 +48,9 @@
       		</div>
       	</div>
       </div>
-    </script>
+    </script> -->
 
-    <script type="text/template" id="popup-manager-contact">
+    <!-- <script type="text/template" id="popup-manager-contact">
 
       <div class="wrap-popup-pane popups-plugin">
           <div class="popup-pane">
@@ -76,9 +76,9 @@
               </div>
           </div>
       </div>
-    </script>
+    </script> -->
 
-    <script type="text/template" id="popup-city-selector">
+    <!-- <script type="text/template" id="popup-city-selector">
 
       <div class="wrap-popup-pane popups-plugin">
           <div class="popup-pane">
@@ -101,9 +101,9 @@
               </div>
           </div>
       </div>
-    </script>
+    </script> -->
 
-    <script type="text/template" id="popup-template-yes-no-question">
+    <!-- <script type="text/template" id="popup-template-yes-no-question">
 
       <div class="wrap-popup-pane popups-plugin">
           <div class="popup-pane">
@@ -116,7 +116,7 @@
               </div>
           </div>
       </div>
-    </script>
+    </script> -->
     <div id="panel"></div>
     <div class="wrap">
       <header class="wrap-header">
@@ -225,12 +225,12 @@
                   <span>Избранное</span></a
                 >
               </div>
-              <script>
+              <!-- <script>
                 var bx_basketFKauiI = new BitrixSmallCart();
                 $(function () {
                   dApp.obSmallBasket.init(bx_basketFKauiI);
                 });
-              </script>
+              </script> -->
               <div id="bx_basketFKauiI" class="bx-basket bx-opener">
                 <!--'start_frame_cache_bx_basketFKauiI'-->
                 <div class="header-cart">
@@ -249,14 +249,14 @@
                   <div id="bx_basketFKauiIproducts" class="bx-basket-item-list-container"></div>
                 </div>
 
-                <script>
+                <!-- <script>
                   BX.ready(function () {
                     bx_basketFKauiI.fixCart();
                   });
-                </script>
+                </script> -->
                 <!--'end_frame_cache_bx_basketFKauiI'-->
               </div>
-              <script type="text/javascript">
+              <!-- <script type="text/javascript">
                 bx_basketFKauiI.siteId = "s1";
                 bx_basketFKauiI.cartId = "bx_basketFKauiI";
                 bx_basketFKauiI.ajaxPath = "/bitrix/components/bitrix/sale.basket.basket.line/ajax.php";
@@ -319,7 +319,7 @@
                 bx_basketFKauiI.closeMessage = "Скрыть";
                 bx_basketFKauiI.openMessage = "Раскрыть";
                 bx_basketFKauiI.activate();
-              </script>
+              </script> -->
               <div class="header-login">
                 <a
                   class="header-login__link has--arrow js--open-tooltip"
@@ -656,12 +656,12 @@
                 ><span class="ico-humb-cat"><span></span><span></span><span></span></span>Каталог</a
               >
             </div>
-            <script>
+            <!-- <script>
               var bx_basketT0kNhm = new BitrixSmallCart();
               $(function () {
                 dApp.obSmallBasket.init(bx_basketT0kNhm);
               });
-            </script>
+            </script> -->
             <div id="bx_basketT0kNhm" class="bx-basket bx-opener">
               <!--'start_frame_cache_bx_basketT0kNhm'-->
               <div class="header-cart">
@@ -680,14 +680,14 @@
                 <div id="bx_basketT0kNhmproducts" class="bx-basket-item-list-container"></div>
               </div>
 
-              <script>
+              <!-- <script>
                 BX.ready(function () {
                   bx_basketT0kNhm.fixCart();
                 });
-              </script>
+              </script> -->
               <!--'end_frame_cache_bx_basketT0kNhm'-->
             </div>
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
               bx_basketT0kNhm.siteId = "s1";
               bx_basketT0kNhm.cartId = "bx_basketT0kNhm";
               bx_basketT0kNhm.ajaxPath = "/bitrix/components/bitrix/sale.basket.basket.line/ajax.php";
@@ -750,7 +750,7 @@
               bx_basketT0kNhm.closeMessage = "Скрыть";
               bx_basketT0kNhm.openMessage = "Раскрыть";
               bx_basketT0kNhm.activate();
-            </script>
+            </script> -->
           </div>
           <ul class="mobile-personal-nav-list">
             <li class="mobile-personal-nav-list__item">
@@ -1501,7 +1501,7 @@
               </div>
             </aside>
 
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
               var smartFilter = new JCSmartFilter(
                 "/catalog/konditsionirovanie/bytovye_konditsionery/komplekty/?view=table",
                 "VERTICAL",
@@ -1511,7 +1511,7 @@
                 },
                 "/local/templates/general/daichi-layout/build/images/loader.svg"
               );
-            </script>
+            </script> -->
 
             <section class="catalog-section__main js-page-catalog__content">
               <div class="wrap-filter-selected" style="display: none">
@@ -3456,11 +3456,11 @@
             </section>
           </div>
 
-          <script>
+          <!-- <script>
             $(function () {
               dApp.CATALOG_CURRENT_VIEW = "table";
             });
-          </script>
+          </script> -->
         </section>
       </div>
       <div class="up-btn"><a class="up-btn__link js-up-btn" href="#">Наверх</a></div>
@@ -3636,6 +3636,9 @@
         </div>
       </div>
     </div>
+
+    <script src="js/main.min.js"></script>
+
     <div class="svg-sprite">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <symbol viewBox="0 0 18 21" fill="none" id="ico-account" xmlns="http://www.w3.org/2000/svg">
@@ -3990,7 +3993,7 @@
         </symbol>
       </svg>
     </div>
-    <script>
+    <!-- <script>
       BX.message({
         BASKET_STATE: {
           defaults: {
@@ -4002,12 +4005,12 @@
           items: { 16216: { QUANTITY: "1", AVAILABLE: "14" }, 16222: { QUANTITY: "1", AVAILABLE: "14" } },
         },
       });
-    </script>
-    <script>
+    </script> -->
+    <!-- <script>
       var skJSData = [];
-    </script>
+    </script> -->
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
         m[i] =
           m[i] ||
@@ -4029,7 +4032,7 @@
         webvisor: true,
         ecommerce: "dataLayer",
       });
-    </script>
+    </script> -->
     <noscript
       ><div><img src="https://mc.yandex.ru/watch/84485338" style="position: absolute; left: -9999px" alt="" /></div
     ></noscript>
