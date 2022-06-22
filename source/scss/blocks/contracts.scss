@@ -515,6 +515,50 @@
   }
 }
 
+.contracts.contracts--points.short {
+  th,
+  td td {
+    &:first-child {
+      display: block;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    &:nth-child(2) {
+      padding-left: 14px;
+    }
+  }
+
+  col {
+    &:nth-child(1) {
+      width: 0;
+    }
+
+    &:nth-child(2) {
+      width: 33.9%;
+    }
+
+    &:nth-child(3) {
+      width: 33.9%;
+    }
+
+    &:nth-child(4) {
+      width: calc(32.2% - 134px);
+    }
+
+    &:nth-child(5) {
+      width: 134px;
+    }
+  }
+
+  & ~ .contracts-mobile {
+    .contracts__link > div:first-child {
+      display: none;
+    }
+  }
+}
+
 .contracts-mobile {
   .points-block {
     display: flex;

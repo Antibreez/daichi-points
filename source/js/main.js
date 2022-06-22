@@ -21,3 +21,4 @@ import "./points-questions";
 import "./spend-points";
 import "./slider-tooltip";
 import "./amount-tooltip";
+import "./my-points-table";

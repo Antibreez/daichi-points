@@ -84,6 +84,57 @@
   margin-bottom: 40px;
 }
 
+.my-points__filter-checkbox {
+  align-self: center;
+  padding: 0 24px;
+
+  label {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  span {
+    padding-top: 2px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  input:checked + .my-points__filter-checkbox-box {
+    background-color: #2858ff;
+
+    svg {
+      display: block;
+    }
+  }
+
+  // @media (max-width: 1024px) {
+  //   display: none;
+  // }
+
+  @media (max-width: 767px) {
+    padding-bottom: 16px;
+    padding-top: 10px;
+  }
+}
+
+.my-points__filter-checkbox-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #e6e6ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 12px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+}
+
 @media (max-width: 1359px) {
   .my-points__main {
     flex-direction: column;
