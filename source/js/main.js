@@ -22,3 +22,4 @@ import "./spend-points";
 import "./slider-tooltip";
 import "./amount-tooltip";
 import "./my-points-table";
+import "./catalog-list-tooltip";

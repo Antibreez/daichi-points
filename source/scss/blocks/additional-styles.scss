@@ -270,6 +270,10 @@ div.up-btn {
       display: block;
     }
 
+    &.hidden {
+      display: none;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -293,10 +297,29 @@ div.up-btn {
     }
   }
 
+  .tooltip__close {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   .tooltip__title {
     display: block;
     @include font(16px, 22px, 500, $text-main);
     margin: 0 0 8px;
+    padding-right: 36px;
   }
 
   .tooltip__desc {
@@ -308,6 +331,10 @@ div.up-btn {
     @media (min-width: 768px) {
       .tooltip {
         display: block;
+      }
+
+      .tooltip.hidden {
+        display: none;
       }
     }
   }
