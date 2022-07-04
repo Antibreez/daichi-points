@@ -8855,7 +8855,7 @@ p.reports__status.active {
 .select2-container--default .select2-search--dropdown .select2-search__field {
   display: none; }
 
-.select2-container .select2-results__option:first-child {
+.bonus-page .select2-container .select2-results__option:first-child {
   display: none; }
 
 .select2-container .select2-selection--single:focus {
