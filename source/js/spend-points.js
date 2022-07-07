@@ -1,3 +1,4 @@
+import inputmask from "inputmask";
 // let $totalPointsBar = $(".spend-points__bar");
 // let $currentPointsBar = $(".spend-points__bar-current");
 // let $currentPointsBarText = $(".spend-points__bar-current-text span");
@@ -89,10 +90,8 @@ $(document).on("click", function () {
   }
 
   if ($pointsTrigger.attr("data-init")) {
-    console.log("no");
     return;
   } else {
-    console.log("yes");
     let $totalPointsBar = $(".spend-points__bar");
     let $currentPointsBar = $(".spend-points__bar-current");
     let $currentPointsBarText = $(".spend-points__bar-current-text span");
@@ -108,6 +107,16 @@ $(document).on("click", function () {
     let $plusBtn = $(".spend-points__plus");
     let $input = $('input[name="points-amount"]');
 
+    const im = new Inputmask({
+      alias: "numeric",
+      allowMinus: false,
+      digits: 0,
+    });
+
+    im.mask($input[0]);
+
+    !$input.val() && $minusBtn.attr("disabled", true);
+
     let $submitBtn = $('#spend-points button[type="submit"]');
 
     const getCurrentBar = () => {
@@ -119,6 +128,18 @@ $(document).on("click", function () {
     };
 
     const changeInput = () => {
+      if (!$input.val() || $input.val() == 0) {
+        $minusBtn.attr("disabled", true);
+      } else {
+        $minusBtn.removeAttr("disabled");
+      }
+
+      if ($input.val() >= +$limitPoints.text()) {
+        $plusBtn.attr("disabled", true);
+      } else {
+        $plusBtn.removeAttr("disabled");
+      }
+
       if (!isNaN(+$input.val()) && +$input.val() >= 0) {
         if (+$input.val() <= +$limitPoints.text()) {
           $currentPointsBar.css("width", `${getCurrentBar()}%`);
@@ -127,6 +148,8 @@ $(document).on("click", function () {
           $inputBlock.removeClass("error");
           $submitBtn.removeAttr("disabled");
 
+          //$plusBtn.removeAttr("disabled");
+
           $pointsLeft.text(+$totalPoints.text() - +$currentPoints.text());
         } else {
           $currentPointsBar.css("width", `${getLimitBar()}%`);
@@ -134,6 +157,8 @@ $(document).on("click", function () {
           $currentPoints.text($limitPoints.text());
           $inputBlock.addClass("error");
           $submitBtn.attr("disabled", true);
+
+          //$plusBtn.attr("disabled", true);
 
           $pointsLeft.text(+$limitPoints.text() - +$currentPoints.text());
         }
@@ -147,8 +172,6 @@ $(document).on("click", function () {
         $pointsLeft.text(+$totalPoints.text() - +$currentPoints.text());
       }
     };
-
-    console.log(getLimitBar());
 
     $input.on("input", changeInput);
 
