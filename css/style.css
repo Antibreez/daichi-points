@@ -9076,7 +9076,7 @@ p.reports__status.active {
 .input-block.points input {
   border: 1px solid #f4f4f8;
   background-color: #fff;
-  text-align: center;
+  text-align: center !important;
   height: 50px;
   padding: 0 48px; }
   .input-block.points input:hover {
@@ -9112,6 +9112,9 @@ p.reports__status.active {
   .spend-points__minus:hover,
   .spend-points__plus:hover {
     cursor: pointer; }
+  .spend-points__minus:disabled,
+  .spend-points__plus:disabled {
+    opacity: 0.5; }
 
 .spend-points__minus {
   left: 1px; }
@@ -9131,6 +9134,9 @@ p.reports__status.active {
   .spend-points__bottom-block .modal__btn-block {
     width: auto;
     margin-top: 0; }
+  .spend-points__bottom-block .modal__btn-item {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
 
 .spend-points__balance {
   font-size: 14px;
