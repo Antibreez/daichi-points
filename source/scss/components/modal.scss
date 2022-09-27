@@ -57,14 +57,16 @@
     padding-right: 30px;
     padding-bottom: 28px;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -32px;
-      width: calc(100% + 64px);
-      height: 1px;
-      background-color: #d1d8e1;
+    &.with-line {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -32px;
+        width: calc(100% + 64px);
+        height: 1px;
+        background-color: #d1d8e1;
+      }
     }
   }
 
