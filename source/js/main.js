@@ -1,4 +1,4 @@
-//import "./vendor/jquery-ui";
+import "./vendor/jquery-ui";
 
 // import "./modal";
 // import "./scroll";
