@@ -3900,6 +3900,34 @@ div.up-btn {
     .catalog-grid-item-chip-block:hover .tooltip {
       display: block; } }
 
+.promo-chip {
+  width: 70px;
+  height: 70px;
+  background: -o-linear-gradient(290deg, #c59357, #e6d69c);
+  background: linear-gradient(160deg, #c59357, #e6d69c);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 500;
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg); }
+  .promo-chip span {
+    display: block;
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px); }
+
 .wrap-catalog-slider .tooltip {
   position: absolute;
   display: none;
